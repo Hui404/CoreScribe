@@ -1,0 +1,15 @@
+../LVGL/lvgl/src/extra/widgets/msgbox/../../../../src/hal/../draw/../misc/../font/../misc/lv_area.h:284:26:lv_pct	2
+../LVGL/lvgl/src/extra/widgets/msgbox/../../../../src/hal/../draw/../misc/../font/lv_font.h:121:26:lv_font_get_line_height	1
+../LVGL/lvgl/src/extra/widgets/msgbox/../../../../src/core/lv_obj_style_gen.h:451:33:lv_obj_get_style_text_font	1
+../LVGL/lvgl/src/extra/widgets/msgbox/../../../../src/core/lv_disp.h:171:26:lv_layer_top	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:61:12:lv_msgbox_create	21
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:139:12:lv_msgbox_get_title	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:146:12:lv_msgbox_get_close_btn	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:153:12:lv_msgbox_get_text	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:160:12:lv_msgbox_get_content	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:167:12:lv_msgbox_get_btns	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:174:10:lv_msgbox_get_active_btn	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:180:14:lv_msgbox_get_active_btn_text	1
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:186:6:lv_msgbox_close	2
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:192:6:lv_msgbox_close_async	2
+../LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.c:202:13:msgbox_close_click_event_cb	1

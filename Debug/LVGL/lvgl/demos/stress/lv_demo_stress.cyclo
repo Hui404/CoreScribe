@@ -1,0 +1,17 @@
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:121:20:lv_anim_set_var	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:133:20:lv_anim_set_exec_cb	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:143:20:lv_anim_set_time	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:153:20:lv_anim_set_delay	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:164:20:lv_anim_set_values	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:222:20:lv_anim_set_ready_cb	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:232:20:lv_anim_set_playback_time	1
+../LVGL/lvgl/demos/stress/../../src/misc/lv_anim.h:252:20:lv_anim_set_repeat_count	1
+../LVGL/lvgl/demos/stress/../../src/core/lv_disp.h:162:26:lv_scr_act	1
+../LVGL/lvgl/demos/stress/../../src/widgets/lv_slider.h:84:20:lv_slider_set_value	1
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:45:6:lv_demo_stress	1
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:54:13:obj_test_task_cb	33
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:430:13:auto_del	1
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:442:13:msgbox_del	1
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:447:13:set_y_anim	1
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:452:13:set_width_anim	1
+../LVGL/lvgl/demos/stress/lv_demo_stress.c:457:13:arc_set_end_angle_anim	1

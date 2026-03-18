@@ -1,0 +1,15 @@
+../Core/Src/AT24C64.c:5:6:MyI2C_W_SCL	1
+../Core/Src/AT24C64.c:12:6:MyI2C_W_SDA	1
+../Core/Src/AT24C64.c:19:9:MyI2C_R_SDA	1
+../Core/Src/AT24C64.c:30:6:MyI2C_Start	1
+../Core/Src/AT24C64.c:46:6:MyI2C_Stop	1
+../Core/Src/AT24C64.c:60:6:MyI2C_SendByte	2
+../Core/Src/AT24C64.c:83:9:MyI2C_ReceiveByte	3
+../Core/Src/AT24C64.c:102:6:MyI2C_SendAck	1
+../Core/Src/AT24C64.c:112:9:MyI2C_ReceiveAck	1
+../Core/Src/AT24C64.c:126:9:AT24C64_WriteOneByte	8
+../Core/Src/AT24C64.c:174:9:AT24C64_ReadOneByte	7
+../Core/Src/AT24C64.c:206:9:AT24C64_WritePage	9
+../Core/Src/AT24C64.c:263:9:AT24C64_WriteBytes	2
+../Core/Src/AT24C64.c:294:9:AT24C64_ReadBytes	8
+../Core/Src/AT24C64.c:332:9:AT24C64_Check	1

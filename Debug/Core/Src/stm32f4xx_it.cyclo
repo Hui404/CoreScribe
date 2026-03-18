@@ -1,0 +1,11 @@
+../Core/Src/stm32f4xx_it.c:81:6:NMI_Handler	1
+../Core/Src/stm32f4xx_it.c:96:6:HardFault_Handler	1
+../Core/Src/stm32f4xx_it.c:111:6:MemManage_Handler	1
+../Core/Src/stm32f4xx_it.c:126:6:BusFault_Handler	1
+../Core/Src/stm32f4xx_it.c:141:6:UsageFault_Handler	1
+../Core/Src/stm32f4xx_it.c:156:6:DebugMon_Handler	1
+../Core/Src/stm32f4xx_it.c:169:6:SysTick_Handler	2
+../Core/Src/stm32f4xx_it.c:198:6:TIM2_IRQHandler	1
+../Core/Src/stm32f4xx_it.c:212:6:TIM3_IRQHandler	1
+../Core/Src/stm32f4xx_it.c:226:6:USART1_IRQHandler	34
+../Core/Src/stm32f4xx_it.c:312:6:TIM5_IRQHandler	1

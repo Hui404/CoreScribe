@@ -1,0 +1,6 @@
+../grbl/motion_control.c:32:6:mc_line	9
+../grbl/motion_control.c:87:6:mc_arc	9
+../grbl/motion_control.c:195:6:mc_dwell	2
+../grbl/motion_control.c:206:6:mc_homing_cycle	2
+../grbl/motion_control.c:256:9:mc_probe_cycle	9
+../grbl/motion_control.c:366:6:mc_reset	6

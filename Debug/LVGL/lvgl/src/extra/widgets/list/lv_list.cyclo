@@ -1,0 +1,4 @@
+../LVGL/lvgl/src/extra/widgets/list/lv_list.c:56:12:lv_list_create	1
+../LVGL/lvgl/src/extra/widgets/list/lv_list.c:65:12:lv_list_add_text	1
+../LVGL/lvgl/src/extra/widgets/list/lv_list.c:76:12:lv_list_add_btn	3
+../LVGL/lvgl/src/extra/widgets/list/lv_list.c:101:14:lv_list_get_btn_text	3

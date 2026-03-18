@@ -1,0 +1,7 @@
+../grbl/spindle_control.c:30:6:spindle_init	8	static
+../grbl/spindle_control.c:38:9:spindle_get_state	4	static
+../grbl/spindle_control.c:82:6:spindle_stop	4	static
+../grbl/spindle_control.c:91:8:spindle_set_speed	16	static
+../grbl/spindle_control.c:161:13:spindle_compute_pwm_value	24	static
+../grbl/spindle_control.c:196:8:spindle_set_state	16	static
+../grbl/spindle_control.c:247:8:spindle_sync	16	static
