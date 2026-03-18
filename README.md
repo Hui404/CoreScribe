@@ -2,6 +2,8 @@
 
 基于 STM32 + FreeRTOS + LVGL 开发的 CoreXY 结构绘图仪（写字机）项目，覆盖从硬件设计、底层驱动到运动控制的全流程嵌入式开发实战，配套详细的技术博客讲解。
 
+![图片1](README/图片1.jpeg)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 👉 项目配套详解博客：[STM32 绘图仪 文章汇总 – xuuuu404](https://www.xuuuu404.com/)
@@ -27,7 +29,7 @@ CoreScribe 是面向嵌入式开发者的开源 CoreXY 绘图仪项目，以「�
 |主控芯片|STM32F407VET6|可替换为其他F4型号|
 |电机驱动|TMC2209 步进电机驱动模块|需支持16细分|
 |机械结构|CoreXY 运动结构（2路步进电机）||
-|外设|串口屏/电阻触摸屏（3.5/4.3寸）|适配LVGL显示|
+|外设|电阻触摸屏（3.2寸）|适配LVGL显示|
 |供电|12V 2A DC 电源|保障电机驱动供电稳定|
 ### 软件环境
 
@@ -105,6 +107,8 @@ cd CoreScribe
 |电机运动|串口发送 `G0 X10 Y10` 指令，验证X/Y轴运动方向与步距精度|
 |LVGL界面|触摸屏操作「点位控制」，确认界面响应与显示正常|
 |绘图测试|导入 Docs/示例GCode.gcode，验证完整绘图流程|
+![图片2](README/图片2.jpg)
+
 ## 📂 项目结构
 
 ```Plain Text
