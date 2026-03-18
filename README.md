@@ -1,7 +1,7 @@
 # CoreScribe
 基于 STM32 + FreeRTOS + LVGL 开发的 CoreXY 结构绘图仪（写字机）项目，包含完整的硬件设计、底层驱动、运动控制逻辑与上位机通信功能，是嵌入式软硬件结合的实战项目。
 
-👉 项目配套详解博客：[https://www.xuuuu404.com/](https://www.xuuuu404.com/)  
+👉 项目配套详解博客：[STM32 绘图仪 文章汇总 – xuuuu404](https://www.xuuuu404.com/stm32-绘图仪/)
 （博客内包含从 PCB 设计、硬件调试到软件移植的全流程开发记录）
 
 ## 📋 项目简介
