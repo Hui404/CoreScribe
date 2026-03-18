@@ -109,10 +109,10 @@ cd CoreScribe
 
 ```Plain Text
 CoreScribe/
-├── Core/                # STM32核心层（启动文件、内核驱动、中断服务）
-├── Drivers/             # 硬件驱动层（电机、串口、触摸屏、LVGL移植）
+├── Core/                # 包含外设模块化驱动
 ├── Middlewares/         # 中间件（FreeRTOS源码、LVGL源码、Grbl解析）
-├── Application/         # 应用层（CoreXY解算、任务管理、界面逻辑）
+├── LVGL/ 				 # LVGL 图形库源码与硬件屏适配
+├── grbl/ 				 # Grbl 运动控制协议解析与 CoreXY 运动学解算
 ├── Docs/                # 文档（硬件原理图、接线图、示例GCode、调试日志）
 ├── CAD/                 # SolidWorks机械设计文件（装配体+零件+通用格式）
 ├── .cproject            # STM32CubeIDE工程配置文件
