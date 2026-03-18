@@ -45,11 +45,23 @@ CoreScribe 是面向嵌入式开发者的开源 CoreXY 绘图仪项目，以「�
 
 - 机械设计：SolidWorks 2023及以上版本
 
-## 🧩 机械设计（SolidWorks）
+## 🧩 硬件设计（PCB & 机械结构）
 
-项目已上传完整 CoreXY 写字机装配体、零件文件，适配无SolidWorks用户的通用格式也一并整理，开箱即用。
+### 📦 PCB 设计（嘉立创开源）
 
-### 文件路径
+ 👉 **在线查看/下单**：[CoreScribe STM32F407 主控板](https://link.jlcpcb.com/你的项目链接) 
+
+- 版本：V1.0 - 主控：STM32F407VET6 
+- 接口：2 路步进电机驱动接口、LCD/Touch 接口、串口、EEPROM 存储
+- 包含：原理图、BOM 表、Gerber 文件
+
+
+
+###  🧰 机械结构（SolidWorks）
+
+项目已上传完整 CoreXY 写字机装配体、零件文件。
+
+#### 文件路径
 
 ```Plain Text
 CAD/
@@ -58,7 +70,7 @@ CAD/
 
 ```
 
-### 使用说明
+#### 使用说明
 
 - **设计软件**：SolidWorks 2023+，低版本可能存在兼容问题
 
