@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-👉 项目配套详解博客：[STM32 绘图仪 文章汇总 – xuuuu404]([STM32 绘图仪 文章汇总 – xuuuu404](https://www.xuuuu404.com/stm32-绘图仪/))
+👉 项目配套详解博客：([STM32 绘图仪 文章汇总 – xuuuu404](https://www.xuuuu404.com/stm32-绘图仪/))
 
 ## 📋 项目概述
 
