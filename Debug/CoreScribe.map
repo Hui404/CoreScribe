@@ -563,21 +563,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Core/Src/XPT2046_touch.o
  .debug_macro   0x00000000      0x146 ./Core/Src/XPT2046_touch.o
  .debug_macro   0x00000000      0x1e2 ./Core/Src/XPT2046_touch.o
- .group         0x00000000        0xc ./Core/Src/cs.o
- .text          0x00000000        0x0 ./Core/Src/cs.o
- .data          0x00000000        0x0 ./Core/Src/cs.o
- .bss           0x00000000        0x0 ./Core/Src/cs.o
- .debug_info    0x00000000       0x22 ./Core/Src/cs.o
- .debug_abbrev  0x00000000       0x12 ./Core/Src/cs.o
- .debug_aranges
-                0x00000000       0x18 ./Core/Src/cs.o
- .debug_macro   0x00000000       0x11 ./Core/Src/cs.o
- .debug_macro   0x00000000      0xade ./Core/Src/cs.o
- .debug_line    0x00000000       0x31 ./Core/Src/cs.o
- .debug_str     0x00000000     0x2e6a ./Core/Src/cs.o
- .comment       0x00000000       0x44 ./Core/Src/cs.o
- .ARM.attributes
-                0x00000000       0x34 ./Core/Src/cs.o
  .group         0x00000000        0xc ./Core/Src/freertos.o
  .group         0x00000000        0xc ./Core/Src/freertos.o
  .group         0x00000000        0xc ./Core/Src/freertos.o
@@ -38503,7 +38488,6 @@ LOAD ./Core/Src/AT24C64.o
 LOAD ./Core/Src/ILI9341_LCD.o
 LOAD ./Core/Src/MyDelay.o
 LOAD ./Core/Src/XPT2046_touch.o
-LOAD ./Core/Src/cs.o
 LOAD ./Core/Src/freertos.o
 LOAD ./Core/Src/fsmc.o
 LOAD ./Core/Src/gpio.o

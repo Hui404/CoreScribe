@@ -2,7 +2,6 @@
 "./Core/Src/ILI9341_LCD.o"
 "./Core/Src/MyDelay.o"
 "./Core/Src/XPT2046_touch.o"
-"./Core/Src/cs.o"
 "./Core/Src/freertos.o"
 "./Core/Src/fsmc.o"
 "./Core/Src/gpio.o"
