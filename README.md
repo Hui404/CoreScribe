@@ -49,7 +49,7 @@ CoreScribe 是面向嵌入式开发者的开源 CoreXY 绘图仪项目，以「�
 
 ### 📦 PCB 设计（嘉立创开源）
 
- 👉 **在线查看/下单**：[CoreScribe STM32F407 主控板](https://link.jlcpcb.com/你的项目链接) 
+ 👉 **在线查看/下单**：[CoreScribe STM32F407 主控板]([STM32写字机 - 立创开源硬件平台](https://oshwhub.com/xuuuu404/stm32-writing-machine)) 
 
 - 版本：V1.0 - 主控：STM32F407VET6 
 - 接口：2 路步进电机驱动接口、LCD/Touch 接口、串口、EEPROM 存储
