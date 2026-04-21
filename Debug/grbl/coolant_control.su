@@ -1,5 +1,0 @@
-../grbl/coolant_control.c:24:6:coolant_init	8	static
-../grbl/coolant_control.c:32:9:coolant_get_state	4	static
-../grbl/coolant_control.c:41:6:coolant_stop	4	static
-../grbl/coolant_control.c:51:6:coolant_set_state	16	static
-../grbl/coolant_control.c:60:6:coolant_sync	16	static

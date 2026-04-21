@@ -1,4 +1,0 @@
-../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:110:20:lv_area_copy	1
-../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:123:26:lv_area_get_width	1
-../LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.c:95:6:lv_draw_sw_letter	10
-../LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.c:148:35:draw_letter_normal	23

@@ -1,5 +1,0 @@
-../LVGL/lvgl/examples/porting/lv_port_indev_template.c:51:6:lv_port_indev_init	1
-../LVGL/lvgl/examples/porting/lv_port_indev_template.c:82:13:touchpad_init	1
-../LVGL/lvgl/examples/porting/lv_port_indev_template.c:89:13:touchpad_read	2
-../LVGL/lvgl/examples/porting/lv_port_indev_template.c:108:13:touchpad_is_pressed	2
-../LVGL/lvgl/examples/porting/lv_port_indev_template.c:123:13:touchpad_get_xy	1

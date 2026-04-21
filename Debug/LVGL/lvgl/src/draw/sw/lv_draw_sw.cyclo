@@ -1,3 +1,0 @@
-../LVGL/lvgl/src/draw/sw/lv_draw_sw.c:40:6:lv_draw_sw_init_ctx	1
-../LVGL/lvgl/src/draw/sw/lv_draw_sw.c:58:6:lv_draw_sw_deinit_ctx	1
-../LVGL/lvgl/src/draw/sw/lv_draw_sw.c:66:6:lv_draw_sw_wait_for_finish	1

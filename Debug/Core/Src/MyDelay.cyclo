@@ -1,3 +1,0 @@
-../Core/Src/MyDelay.c:14:6:MyDelay_Init	1
-../Core/Src/MyDelay.c:25:6:MyDelay_us	3
-../Core/Src/MyDelay.c:44:6:MyDelay_ms	3

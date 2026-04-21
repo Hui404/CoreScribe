@@ -1,8 +1,0 @@
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:53:12:lv_tileview_create	24	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:65:12:lv_tileview_add_tile	24	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:77:6:lv_obj_set_tile	40	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:90:6:lv_obj_set_tile_id	48	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:114:12:lv_tileview_get_tile_act	24	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:124:13:lv_tileview_constructor	16	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:135:13:lv_tileview_tile_constructor	32	static
-../LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.c:153:13:tileview_event_cb	64	static

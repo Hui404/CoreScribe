@@ -4,7 +4,8 @@
 
 ![图片1](README/图片1.jpeg)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Multi-License](https://img.shields.io/badge/License-Multi--License-orange.svg)](./THIRD_PARTY_LICENSES.md)
+> License note: this repository is multi-licensed (including GPL components under `grbl/`). See `THIRD_PARTY_LICENSES.md`.
 
 👉 项目配套详解博客：([STM32 绘图仪 文章汇总 – xuuuu404](https://www.xuuuu404.com/stm32-绘图仪/))
 
@@ -156,7 +157,7 @@ CoreScribe/
 ├── .cproject            # STM32CubeIDE工程配置文件
 ├── .project             # STM32CubeIDE工程配置文件
 ├── CoreScribe.ioc       # STM32CubeMX/CubeIDE配置文件
-├── LICENSE              # MIT开源协议
+├── LICENSE              # 根许可证（仓库为多许可证，详见 THIRD_PARTY_LICENSES.md）
 └── README.md            # 项目说明
 
 ```
@@ -179,15 +180,13 @@ CoreScribe/
 |SolidWorks装配体打不开|1. SW版本过低；2. 未拉取完整CAD文件；3. 零件路径缺失|
 ## 📄 开源协议
 
-本项目基于 **MIT License** 开源（详见 LICENSE 文件），你可以：
+本项目为 **多许可证（Multi-License）** 仓库：
 
-- ✅ 自由使用、修改、复制本项目代码/硬件设计/机械图纸
+- CoreScribe 自研代码：`MIT`（见 `LICENSE`）
+- `grbl/` 目录代码：`GPL-3.0-or-later`
+- 其他第三方组件：遵循其各自许可证（见 `THIRD_PARTY_LICENSES.md`）
 
-- ✅ 将修改后的代码用于商业产品
-
-- ✅ 分发本项目的源代码或二进制文件
-
-- ❗ 必须保留版权声明和协议文本，作者无需承担任何使用风险
+分发源码或二进制时，请保留对应版权声明与许可证文本，并遵守各组件许可证义务。
 
 ## ✨ 贡献与致谢
 

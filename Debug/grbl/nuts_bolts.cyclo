@@ -1,9 +1,0 @@
-../grbl/nuts_bolts.c:30:13:Delay_us	1
-../grbl/nuts_bolts.c:36:13:Delay_ms	1
-../grbl/nuts_bolts.c:51:9:read_float	16
-../grbl/nuts_bolts.c:128:6:delay_sec	5
-../grbl/nuts_bolts.c:147:6:delay_ms	1
-../grbl/nuts_bolts.c:158:6:delay_us	5
-../grbl/nuts_bolts.c:179:7:hypot_f	1
-../grbl/nuts_bolts.c:182:7:convert_delta_vector_to_unit_vector	4
-../grbl/nuts_bolts.c:198:7:limit_value_by_axis_maximum	4

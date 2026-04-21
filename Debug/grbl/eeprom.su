@@ -1,4 +1,0 @@
-../grbl/eeprom.c:29:15:eeprom_get_char	24	static
-../grbl/eeprom.c:44:6:eeprom_put_char	32	static,ignoring_inline_asm
-../grbl/eeprom.c:74:6:memcpy_to_eeprom_with_checksum	32	static
-../grbl/eeprom.c:84:5:memcpy_from_eeprom_with_checksum	32	static

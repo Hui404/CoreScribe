@@ -1,7 +1,0 @@
-../Core/Src/servo.c:14:17:Servo_ClampPulseUs	3
-../Core/Src/servo.c:25:17:Servo_PulseUsToCompare	1
-../Core/Src/servo.c:33:6:Servo_Init	1
-../Core/Src/servo.c:40:6:Servo_SetPWM	3
-../Core/Src/servo.c:56:6:Servo_SetPulseUs	1
-../Core/Src/servo.c:61:6:Servo_RequestPulseUs	1
-../Core/Src/servo.c:67:6:Servo_ProcessPending	3

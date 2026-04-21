@@ -8,7 +8,6 @@
   *
   * Copyright (c) 2026 STMicroelectronics.
   * All rights reserved.
-  *
   * This software is licensed under terms that can be found in the LICENSE file
   * in the root directory of this software component.
   * If no LICENSE file comes with this software, it is provided AS-IS.
@@ -37,6 +36,7 @@
 //#include "lv_demo_stress.h"
 #include "malloc.h"
 #include "servo.h"
+#include "touch_calibration.h"
 /*demo*/
 //#include "lv_demo_music.h"
 
@@ -146,6 +146,8 @@ int main(void)
   //grbl_Start();
 
   //ILI9341_Draw_Rec(10, 10, 200, 150, 0xf12547);
+
+  touch_calibration_init();
 
   /* USER CODE END 2 */
 

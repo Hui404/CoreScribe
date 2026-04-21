@@ -265,6 +265,12 @@ uint8_t AT24C64_WriteBytes(uint16_t WriteAddr, uint8_t *pData, uint16_t Len)
 	uint16_t i = 0;
 	uint16_t page_remaining;
 	uint16_t write_len;
+	uint8_t status;
+	uint32_t end_addr;
+
+	if (pData == NULL) return 1;
+	end_addr = (uint32_t)WriteAddr + (uint32_t)Len;
+	if (end_addr > AT24C64_SIZE) return 2;
 
 	while( Len > 0)
 	{
@@ -272,7 +278,8 @@ uint8_t AT24C64_WriteBytes(uint16_t WriteAddr, uint8_t *pData, uint16_t Len)
 		page_remaining = AT24C64_PAGE_SIZE - (WriteAddr % AT24C64_PAGE_SIZE);
 		write_len = (Len < page_remaining) ? Len : page_remaining;
 
-		AT24C64_WritePage(WriteAddr, pData + i, write_len);
+		status = AT24C64_WritePage(WriteAddr, pData + i, write_len);
+		if (status != 0) return status;
 
 		Len -= write_len;
 		i += write_len;
@@ -294,10 +301,12 @@ uint8_t AT24C64_WriteBytes(uint16_t WriteAddr, uint8_t *pData, uint16_t Len)
 uint8_t AT24C64_ReadBytes(uint16_t ReadAddr, uint8_t *pData, uint16_t Len)
 {
 	uint16_t i;
+	uint32_t end_addr;
 
 	//如果输入地址超出最大地址，返回2
 	if (pData == NULL) return 1;                 // 指针无效
-	if (ReadAddr + Len > AT24C64_MAX_ADDR) return 2;             // 地址超范围
+	end_addr = (uint32_t)ReadAddr + (uint32_t)Len;
+	if (end_addr > AT24C64_SIZE) return 2;             // 地址超范围
 
 	MyI2C_Start();
 	MyI2C_SendByte(AT24C64_Write_Addr); //发送设备地址（写）

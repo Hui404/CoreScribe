@@ -327,6 +327,16 @@ uint8_t XPT2046_Get_TouchedPoint ( strType_XPT2046_Coordinate * pDisplayCoordina
   return ucRet;
 }
 
+//获取原始ADC平滑坐标（未经过校准参数变换）
+uint8_t XPT2046_GetRawPoint(strType_XPT2046_Coordinate *pRawCoordinate)
+{
+	if (pRawCoordinate == NULL) {
+		return 0;
+	}
+
+	return XPT2046_ReadAdc_Smooth_XY(pRawCoordinate);
+}
+
 //获取坐标X
 uint16_t XPT2046_GetPoint_X(void)
 {

@@ -1,3 +1,9 @@
+CoreScribe is a multi-license repository.
+
+- Original project code authored in this repository is licensed under MIT (see below).
+- Third-party components are licensed under their own terms and are NOT re-licensed by this file.
+- See THIRD_PARTY_LICENSES.md for component-level license details.
+
 MIT License
 
 Copyright (c) 2026 Hui404

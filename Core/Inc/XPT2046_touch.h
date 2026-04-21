@@ -96,6 +96,7 @@ void XPT2046_WriteCMD(uint8_t ucCmd);
 uint16_t XPT2046_ReadCMD (void);
 uint8_t XPT2046_TouchDetect(void);
 uint8_t XPT2046_Get_TouchedPoint ( strType_XPT2046_Coordinate * pDisplayCoordinate, strType_XPT2046_TouchPara * pTouchPara );
+uint8_t XPT2046_GetRawPoint(strType_XPT2046_Coordinate *pRawCoordinate);
 
 
 uint16_t XPT2046_GetPoint_X(void);

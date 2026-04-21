@@ -1,4 +1,0 @@
-../grbl/probe.c:29:6:probe_init	4	static
-../grbl/probe.c:38:6:probe_configure_invert_mask	16	static
-../grbl/probe.c:47:9:probe_get_state	4	static
-../grbl/probe.c:53:6:probe_state_monitor	8	static

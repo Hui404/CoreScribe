@@ -1,7 +1,0 @@
-../LVGL/lvgl/src/draw/sw/../../misc/lv_color.h:472:42:lv_color_premult	16	static
-../LVGL/lvgl/src/draw/sw/../../misc/lv_color.h:497:48:lv_color_mix_premult	24	static
-../LVGL/lvgl/src/draw/sw/../../misc/lv_color.h:597:26:lv_color_hex	24	static
-../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:110:20:lv_area_copy	16	static
-../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:123:26:lv_area_get_width	16	static
-../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:133:26:lv_area_get_height	16	static
-../LVGL/lvgl/src/draw/sw/lv_draw_sw_img.c:41:28:lv_draw_sw_img_decoded	264	static

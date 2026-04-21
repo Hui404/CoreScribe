@@ -1,7 +1,0 @@
-../grbl/protocol.c:43:6:protocol_main_loop	16	static
-../grbl/protocol.c:182:6:protocol_buffer_synchronize	8	static
-../grbl/protocol.c:199:6:protocol_auto_cycle_start	8	static
-../grbl/protocol.c:221:6:protocol_execute_realtime	8	static
-../grbl/protocol.c:235:13:protocol_background_slice	16	static
-../grbl/protocol.c:257:6:protocol_exec_rt_system	16	static
-../grbl/protocol.c:559:13:protocol_exec_rt_suspend	32	static

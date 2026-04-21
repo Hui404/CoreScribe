@@ -1,7 +1,0 @@
-../LVGL/lvgl/src/misc/lv_math.c:48:31:lv_trigo_sin	7
-../LVGL/lvgl/src/misc/lv_math.c:83:10:lv_bezier3	1
-../LVGL/lvgl/src/misc/lv_math.c:109:28:lv_sqrt	3
-../LVGL/lvgl/src/misc/lv_math.c:132:10:lv_atan2	17
-../LVGL/lvgl/src/misc/lv_math.c:214:9:lv_pow	3
-../LVGL/lvgl/src/misc/lv_math.c:236:9:lv_map	3
-../LVGL/lvgl/src/misc/lv_math.c:254:10:lv_rand	1

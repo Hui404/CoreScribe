@@ -1,6 +1,0 @@
-../grbl/grbl_limits.c:41:6:limits_init	2
-../grbl/grbl_limits.c:59:6:limits_disable	1
-../grbl/grbl_limits.c:70:9:limits_get_state	5
-../grbl/grbl_limits.c:106:6:HAL_GPIO_EXTI_Callback	11
-../grbl/grbl_limits.c:191:6:limits_go_home	35
-../grbl/grbl_limits.c:445:6:limits_soft_check	5
