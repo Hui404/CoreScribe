@@ -1,0 +1,5 @@
+../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:123:26:lv_area_get_width	16	static
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_line.c:52:28:lv_draw_sw_line	112	static
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_line.c:112:35:draw_line_hor	104	static
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_line.c:198:35:draw_line_ver	104	static
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_line.c:278:35:draw_line_skew	328	static

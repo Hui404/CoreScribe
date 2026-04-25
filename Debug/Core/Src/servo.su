@@ -1,0 +1,7 @@
+../Core/Src/servo.c:14:17:Servo_ClampPulseUs	16	static
+../Core/Src/servo.c:25:17:Servo_PulseUsToCompare	16	static
+../Core/Src/servo.c:33:6:Servo_Init	8	static
+../Core/Src/servo.c:40:6:Servo_SetPWM	24	static
+../Core/Src/servo.c:56:6:Servo_SetPulseUs	16	static
+../Core/Src/servo.c:61:6:Servo_RequestPulseUs	16	static
+../Core/Src/servo.c:67:6:Servo_ProcessPending	24	static,ignoring_inline_asm

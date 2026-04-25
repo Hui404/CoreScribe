@@ -1,0 +1,14 @@
+../LVGL/lvgl/src/extra/widgets/led/../../../../src/hal/../draw/../misc/lv_color.h:379:24:lv_color_to32	1
+../LVGL/lvgl/src/extra/widgets/led/../../../../src/hal/../draw/../misc/lv_color.h:443:48:lv_color_mix	1
+../LVGL/lvgl/src/extra/widgets/led/../../../../src/hal/../draw/../misc/lv_color.h:584:23:lv_color_brightness	1
+../LVGL/lvgl/src/extra/widgets/led/../../../../src/hal/../draw/../misc/lv_color.h:592:26:lv_color_make	1
+../LVGL/lvgl/src/extra/widgets/led/../../../../src/hal/../draw/../misc/lv_color.h:697:26:lv_color_black	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:54:12:lv_led_create	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:71:6:lv_led_set_color	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:85:6:lv_led_set_brightness	2
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:102:6:lv_led_on	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:111:6:lv_led_off	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:120:6:lv_led_toggle	2
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:138:9:lv_led_get_brightness	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:150:13:lv_led_constructor	1
+../LVGL/lvgl/src/extra/widgets/led/lv_led.c:158:13:lv_led_event	5

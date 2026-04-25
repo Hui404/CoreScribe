@@ -1,0 +1,16 @@
+../grbl/grbl_serial.c:39:9:serial_get_rx_buffer_available	2
+../grbl/grbl_serial.c:49:9:serial_get_rx_buffer_count	2
+../grbl/grbl_serial.c:59:9:serial_get_tx_buffer_count	2
+../grbl/grbl_serial.c:67:6:serial_init	1
+../grbl/grbl_serial.c:84:6:serial_write	4
+../grbl/grbl_serial.c:110:9:serial_read	3
+../grbl/grbl_serial.c:133:9:serial_Inject_char	2
+../grbl/grbl_serial.c:152:6:serial_manual_Write	2
+../grbl/grbl_serial.c:172:6:serial_reset_read_buffer	1
+../grbl/grbl_serial.c:183:6:Serial_SendByte	2
+../grbl/grbl_serial.c:190:6:Serial_SendArray	2
+../grbl/grbl_serial.c:201:6:Serial_SendString	2
+../grbl/grbl_serial.c:213:10:Serial_Pow	2
+../grbl/grbl_serial.c:228:6:Serial_SendNumber	2
+D:\STM32CubeIDE\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344\tools\bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/stdio.h:220:5:fputc	1
+../grbl/grbl_serial.c:246:6:Serial_Printf	1

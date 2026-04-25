@@ -1,0 +1,12 @@
+../MALLOC/malloc.c:75:6:my_mem_copy	2
+../MALLOC/malloc.c:89:6:my_mem_set	2
+../MALLOC/malloc.c:100:6:my_mem_init	1
+../MALLOC/malloc.c:111:10:my_mem_perused	3
+../MALLOC/malloc.c:132:10:my_mem_malloc	8
+../MALLOC/malloc.c:182:9:my_mem_free	4
+../MALLOC/malloc.c:216:6:myfree	2
+../MALLOC/malloc.c:232:7:mymalloc	2
+../MALLOC/malloc.c:254:7:myrealloc	2
+../MALLOC/malloc.c:276:7:lvgl_mymalloc	1
+../MALLOC/malloc.c:286:6:lvgl_myfree	1
+../MALLOC/malloc.c:297:7:lvgl_myrealloc	1

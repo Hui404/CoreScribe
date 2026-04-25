@@ -1,0 +1,14 @@
+../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:110:20:lv_area_copy	1
+../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:123:26:lv_area_get_width	1
+../LVGL/lvgl/src/draw/sw/../../misc/lv_area.h:133:26:lv_area_get_height	1
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:69:6:lv_draw_sw_rect	1
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:85:6:lv_draw_sw_bg	1
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:100:13:draw_bg	36
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:331:13:draw_bg_img	8
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:395:13:draw_border	11
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:424:35:draw_shadow	98
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:944:35:shadow_draw_corner_buf	13
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:1031:35:shadow_blur_corner	15
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:1105:13:draw_outline	5
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:1146:6:draw_border_generic	44
+../LVGL/lvgl/src/draw/sw/lv_draw_sw_rect.c:1371:13:draw_border_simple	7

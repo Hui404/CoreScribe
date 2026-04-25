@@ -1,0 +1,14 @@
+../LVGL/lvgl/src/extra/widgets/tabview/../../../../src/misc/lv_mem.h:194:44:lv_memcpy_small	32	static
+../LVGL/lvgl/src/extra/widgets/tabview/../../../../src/core/lv_obj_style_gen.h:121:26:lv_obj_get_style_pad_column	24	static
+../LVGL/lvgl/src/extra/widgets/tabview/../../../../src/core/lv_obj_style_gen.h:542:29:lv_obj_get_style_base_dir	24	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:56:12:lv_tabview_create	24	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:67:12:lv_tabview_add_tab	56	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:124:6:lv_tabview_set_act	48	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:153:10:lv_tabview_get_tab_act	24	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:160:12:lv_tabview_get_content	16	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:165:12:lv_tabview_get_tab_btns	16	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:174:13:lv_tabview_constructor	32	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:238:13:lv_tabview_destructor	24	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:262:13:lv_tabview_event	24	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:277:13:btns_value_changed_event_cb	32	static
+../LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.c:286:13:cont_scroll_end_event_cb	48	static

@@ -1,0 +1,8 @@
+../LVGL/lvgl/src/extra/themes/basic/../../../../src/hal/../draw/../misc/lv_color.h:592:26:lv_color_make	16	static
+../LVGL/lvgl/src/extra/themes/basic/../../../../src/hal/../draw/../misc/lv_color.h:693:26:lv_color_white	8	static
+../LVGL/lvgl/src/extra/themes/basic/../../../../src/hal/../draw/../misc/lv_style.h:476:20:lv_style_set_pad_all	16	static
+../LVGL/lvgl/src/extra/themes/basic/lv_theme_basic.c:68:13:style_init	16	static
+../LVGL/lvgl/src/extra/themes/basic/lv_theme_basic.c:139:6:lv_theme_basic_is_inited	4	static
+../LVGL/lvgl/src/extra/themes/basic/lv_theme_basic.c:144:14:lv_theme_basic_init	16	static
+../LVGL/lvgl/src/extra/themes/basic/lv_theme_basic.c:174:13:theme_apply	24	static
+../LVGL/lvgl/src/extra/themes/basic/lv_theme_basic.c:424:13:style_init_reset	16	static

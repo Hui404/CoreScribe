@@ -1,0 +1,3 @@
+../LVGL/lvgl/examples/porting/lv_port_disp_template.c:46:6:lv_port_disp_init	1
+../LVGL/lvgl/examples/porting/lv_port_disp_template.c:131:13:disp_init	1
+../LVGL/lvgl/examples/porting/lv_port_disp_template.c:140:13:disp_flush	1

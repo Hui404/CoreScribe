@@ -1,0 +1,4 @@
+../grbl/eeprom.c:29:15:eeprom_get_char	1
+../grbl/eeprom.c:44:6:eeprom_put_char	2
+../grbl/eeprom.c:74:6:memcpy_to_eeprom_with_checksum	2
+../grbl/eeprom.c:84:5:memcpy_from_eeprom_with_checksum	2

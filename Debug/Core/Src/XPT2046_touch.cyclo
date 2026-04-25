@@ -1,0 +1,12 @@
+../Core/Src/XPT2046_touch.c:46:6:XPT2046_Init	1
+../Core/Src/XPT2046_touch.c:58:13:XPT2046_DelayUS	3
+../Core/Src/XPT2046_touch.c:73:6:XPT2046_WriteCMD	3
+../Core/Src/XPT2046_touch.c:97:10:XPT2046_ReadCMD	2
+../Core/Src/XPT2046_touch.c:131:9:XPT2046_TouchDetect	9
+../Core/Src/XPT2046_touch.c:204:17:XPT2046_ReadAdc	1
+../Core/Src/XPT2046_touch.c:213:13:XPT2046_ReadAdc_XY	1
+../Core/Src/XPT2046_touch.c:231:16:XPT2046_ReadAdc_Smooth_XY	11
+../Core/Src/XPT2046_touch.c:311:9:XPT2046_Get_TouchedPoint	2
+../Core/Src/XPT2046_touch.c:331:9:XPT2046_GetRawPoint	2
+../Core/Src/XPT2046_touch.c:341:10:XPT2046_GetPoint_X	1
+../Core/Src/XPT2046_touch.c:354:10:XPT2046_GetPoint_Y	1

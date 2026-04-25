@@ -1,0 +1,9 @@
+../Drivers/CMSIS/Include/core_cm4.h:1938:34:__NVIC_SystemReset	1
+../sys/sys.c:33:6:sys_nvic_set_vector_table	1
+../sys/sys.c:44:6:sys_wfi_set	1
+../sys/sys.c:54:6:sys_intx_disable	1
+../sys/sys.c:64:6:sys_intx_enable	1
+../sys/sys.c:75:6:sys_msr_msp	1
+../sys/sys.c:85:6:sys_standby	1
+../sys/sys.c:96:6:sys_soft_reset	0
+../sys/sys.c:130:9:sys_stm32_clock_init	4

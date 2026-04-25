@@ -24,6 +24,9 @@ typedef struct {
   } data;
 } ui_jog_command_t;
 
+// 这是一个环形队列：
+// - UI按钮事件负责把命令塞进队列
+// - Grbl协议循环调用ui_jog_process，把命令取出来执行
 static ui_jog_command_t ui_jog_queue[UI_JOG_QUEUE_DEPTH];
 static volatile uint8_t ui_jog_head;
 static volatile uint8_t ui_jog_tail;
@@ -115,6 +118,7 @@ static uint8_t ui_jog_execute(const ui_jog_command_t *command)
 
 void ui_jog_init(void)
 {
+  // 把队列和状态清零，通常在开机或abort后调用。
   ui_jog_head = 0;
   ui_jog_tail = 0;
   ui_jog_last_status = UI_JOG_STATUS_NONE;
@@ -130,6 +134,7 @@ uint8_t ui_jog_enqueue(int16_t x_mm_x100, int16_t y_mm_x100, uint16_t feed_mm_mi
     return UI_JOG_ENQUEUE_INVALID;
   }
 
+  // 这里会短暂关中断，避免写队列时head/tail被打断后弄乱。
   primask = __get_PRIMASK();
   __disable_irq();
 
@@ -167,6 +172,7 @@ uint8_t ui_jog_enqueue_line(const char *line)
     return UI_JOG_ENQUEUE_INVALID;
   }
 
+  // 和ui_jog_enqueue一样，写队列时先短暂关中断。
   primask = __get_PRIMASK();
   __disable_irq();
 
@@ -201,11 +207,13 @@ void ui_jog_process(void)
   uint8_t status;
   ui_jog_command_t command;
 
+  // abort时直接清空队列，避免恢复后误跑旧命令。
   if (sys.abort) {
     ui_jog_init();
     return;
   }
 
+  // 先快速取出一条命令，再马上开中断，不要关太久。
   primask = __get_PRIMASK();
   __disable_irq();
 
@@ -224,6 +232,7 @@ void ui_jog_process(void)
   ui_jog_processing = 1U;
   __set_PRIMASK(primask);
 
+  // 真正执行命令放在关中断外面，避免影响系统实时性。
   if (command.type == UI_JOG_COMMAND_LINE) {
     status = ui_jog_execute_line(command.data.line);
   } else {

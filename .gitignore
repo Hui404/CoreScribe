@@ -1,0 +1,16 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local packaging outputs
+build/
+dist/
+*.spec
+
+# Windows noise
+Thumbs.db
+Desktop.ini

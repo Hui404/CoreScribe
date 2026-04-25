@@ -1,0 +1,10 @@
+../Core/Src/ui_jog.c:36:16:ui_jog_queue_count_locked	2
+../Core/Src/ui_jog.c:45:13:ui_jog_append_axis	4
+../Core/Src/ui_jog.c:83:16:ui_jog_execute_line	5
+../Core/Src/ui_jog.c:103:16:ui_jog_execute	1
+../Core/Src/ui_jog.c:119:6:ui_jog_init	1
+../Core/Src/ui_jog.c:128:9:ui_jog_enqueue	6
+../Core/Src/ui_jog.c:161:9:ui_jog_enqueue_line	8
+../Core/Src/ui_jog.c:203:6:ui_jog_process	7
+../Core/Src/ui_jog.c:249:9:ui_jog_get_pending_count	2
+../Core/Src/ui_jog.c:265:9:ui_jog_get_last_status	1

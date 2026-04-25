@@ -15,7 +15,7 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+// Includes ------------------------------------------------------------------
 #include "main.h"
 #include "cmsis_os.h"
 #include "tim.h"
@@ -23,7 +23,7 @@
 #include "gpio.h"
 #include "fsmc.h"
 
-/* Private includes ----------------------------------------------------------*/
+// Private includes ----------------------------------------------------------
 /* USER CODE BEGIN Includes */
 #include "grbl.h"
 
@@ -34,10 +34,10 @@
 #include "lv_port_disp_template.h"
 #include "lv_port_indev_template.h"
 //#include "lv_demo_stress.h"
-#include "malloc.h"
+//#include "malloc.h"
 #include "servo.h"
 #include "touch_calibration.h"
-/*demo*/
+// demo
 //#include "lv_demo_music.h"
 
 
@@ -45,34 +45,34 @@
 
 /* USER CODE END Includes */
 
-/* Private typedef -----------------------------------------------------------*/
+// Private typedef -----------------------------------------------------------
 /* USER CODE BEGIN PTD */
 /* USER CODE END PTD */
 
-/* Private define ------------------------------------------------------------*/
+// Private define ------------------------------------------------------------
 /* USER CODE BEGIN PD */
 
 /* USER CODE END PD */
 
-/* Private macro -------------------------------------------------------------*/
+// Private macro -------------------------------------------------------------
 /* USER CODE BEGIN PM */
 
 /* USER CODE END PM */
 
-/* Private variables ---------------------------------------------------------*/
+// Private variables ---------------------------------------------------------
 
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
 
-/* Private function prototypes -----------------------------------------------*/
+// Private function prototypes -----------------------------------------------
 void SystemClock_Config(void);
 void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
-/* Private user code ---------------------------------------------------------*/
+// Private user code ---------------------------------------------------------
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
@@ -88,23 +88,23 @@ int main(void)
 
   /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+  // MCU Configuration--------------------------------------------------------
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  // Reset of all peripherals, Initializes the Flash interface and the Systick.
   HAL_Init();
 
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
 
-  /* Configure the system clock */
+  // Configure the system clock
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
+  // Initialize all configured peripherals
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_FSMC_Init();
@@ -125,6 +125,7 @@ int main(void)
 
 
   lv_init();
+  // 这里只初始化LVGL内核；显示和触摸驱动在defaultTask里再初始化。
 
 
 //  lv_port_disp_init();
@@ -148,19 +149,23 @@ int main(void)
   //ILI9341_Draw_Rec(10, 10, 200, 150, 0xf12547);
 
   touch_calibration_init();
+  // 先把校准模块准备好，后面由LVGL任务定期调用touch_calibration_process。
 
   /* USER CODE END 2 */
 
-  /* Init scheduler */
-  osKernelInitialize();  /* Call init function for freertos objects (in cmsis_os2.c) */
+  // Init scheduler
+  // 这里会创建FreeRTOS任务对象（包含LVGL任务和Grbl任务）。
+  osKernelInitialize();  // Call init function for freertos objects (in cmsis_os2.c)
   MX_FREERTOS_Init();
 
-  /* Start scheduler */
+  // Start scheduler
+
+  // 启动后控制权交给调度器，正常情况下不会返回到这里。
   osKernelStart();
 
-  /* We should never get here as control is now taken by the scheduler */
+  // We should never get here as control is now taken by the scheduler
 
-  /* Infinite loop */
+  // Infinite loop
   /* USER CODE BEGIN WHILE */
 
 
@@ -236,7 +241,7 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
+  // User can add his own implementation to report the HAL error return state
   __disable_irq();
   while (1)
   {
@@ -258,4 +263,4 @@ void assert_failed(uint8_t *file, uint32_t line)
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }
-#endif /* USE_FULL_ASSERT */
+#endif // USE_FULL_ASSERT

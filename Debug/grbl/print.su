@@ -1,0 +1,9 @@
+../grbl/print.c:25:6:printString	16	static
+../grbl/print.c:33:6:printPgmString	16	static
+../grbl/print.c:62:6:print_uint8_base10	24	static
+../grbl/print.c:81:6:print_uint8_base2_ndigit	56	dynamic
+../grbl/print.c:95:6:print_uint32_base10	32	static
+../grbl/print.c:115:6:printInteger	16	static
+../grbl/print.c:131:6:printFloat	40	static
+../grbl/print.c:173:6:printFloat_CoordValue	16	static
+../grbl/print.c:181:6:printFloat_RateValue	16	static

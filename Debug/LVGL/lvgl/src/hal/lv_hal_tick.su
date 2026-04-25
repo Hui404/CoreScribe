@@ -1,0 +1,2 @@
+../LVGL/lvgl/src/hal/lv_hal_tick.c:60:10:lv_tick_get	8	static
+../LVGL/lvgl/src/hal/lv_hal_tick.c:86:10:lv_tick_elaps	24	static

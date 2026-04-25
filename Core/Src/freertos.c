@@ -17,13 +17,13 @@
   */
 /* USER CODE END Header */
 
-/* Includes ------------------------------------------------------------------*/
+// Includes ------------------------------------------------------------------
 #include "FreeRTOS.h"
 #include "task.h"
 #include "main.h"
 #include "cmsis_os.h"
 
-/* Private includes ----------------------------------------------------------*/
+// Private includes ----------------------------------------------------------
 /* USER CODE BEGIN Includes */
 #include "grbl.h"
 #include "ui_jog.h"
@@ -31,41 +31,43 @@
 
 /* USER CODE END Includes */
 
-/* Private typedef -----------------------------------------------------------*/
+// Private typedef -----------------------------------------------------------
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
 
-/* Private define ------------------------------------------------------------*/
+// Private define ------------------------------------------------------------
 /* USER CODE BEGIN PD */
 
 /* USER CODE END PD */
 
-/* Private macro -------------------------------------------------------------*/
+// Private macro -------------------------------------------------------------
 /* USER CODE BEGIN PM */
 
 /* USER CODE END PM */
 
-/* Private variables ---------------------------------------------------------*/
+// Private variables ---------------------------------------------------------
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-/* Definitions for defaultTask */
+// Definitions for defaultTask
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
+  // UI任务栈给大一点，避免界面创建和文本处理时栈不够。
   .name = "defaultTask",
   .stack_size = 1024 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for grblTask */
+// Definitions for grblTask
 osThreadId_t grblTaskHandle;
 const osThreadAttr_t grblTask_attributes = {
+  // Grbl任务优先级略高一点，运动控制响应更稳。
   .name = "grblTask",
   .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityNormal1,
 };
 
-/* Private function prototypes -----------------------------------------------*/
+// Private function prototypes -----------------------------------------------
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
@@ -73,7 +75,7 @@ const osThreadAttr_t grblTask_attributes = {
 void StartDefaultTask(void *argument);
 void StartgrblTask(void *argument);
 
-void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+void MX_FREERTOS_Init(void); // (MISRA C 2004 rule 8.1)
 
 /**
   * @brief  FreeRTOS initialization
@@ -82,39 +84,40 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
+  // 先把UI侧Jog队列初始化好，再创建线程。
   ui_jog_init();
 
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
+  // add mutexes, ...
   /* USER CODE END RTOS_MUTEX */
 
   /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
+  // add semaphores, ...
   /* USER CODE END RTOS_SEMAPHORES */
 
   /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
+  // start timers, add new ones, ...
   /* USER CODE END RTOS_TIMERS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
+  // add queues, ...
   /* USER CODE END RTOS_QUEUES */
 
-  /* Create the thread(s) */
-  /* creation of defaultTask */
+  // Create the thread(s)
+  // creation of defaultTask
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
-  /* creation of grblTask */
+  // creation of grblTask
   grblTaskHandle = osThreadNew(StartgrblTask, NULL, &grblTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
+  // add threads, ...
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
-  /* add events, ... */
+  // add events, ...
   /* USER CODE END RTOS_EVENTS */
 
 }
@@ -129,11 +132,13 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+  // 所有LVGL调用都放这个任务里，避免多线程同时改UI。
   ui_lvgl_task_init();
 
-  /* Infinite loop */
+  // Infinite loop
   for(;;)
   {
+    // LVGL会返回建议的下次执行间隔，这里直接按它给的时间休眠。
     osDelay(ui_lvgl_task_step());
   }
   /* USER CODE END StartDefaultTask */
@@ -150,18 +155,20 @@ void StartgrblTask(void *argument)
 {
   /* USER CODE BEGIN StartgrblTask */
 
+  // 稍等一会，让串口、UI和外设先稳定，再进Grbl主循环。
   osDelay(20);
   grbl_Start();
 
-  /* Infinite loop */
+  // Infinite loop
   for(;;)
   {
+    // 如果grbl_Start意外返回，这里让任务活着并持续让出CPU。
     osDelay(1);
   }
   /* USER CODE END StartgrblTask */
 }
 
-/* Private application code --------------------------------------------------*/
+// Private application code --------------------------------------------------
 /* USER CODE BEGIN Application */
 
 /* USER CODE END Application */

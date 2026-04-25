@@ -1,0 +1,7 @@
+../LVGL/lvgl/src/core/lv_obj_class.c:43:12:lv_obj_class_create_obj	40	static
+../LVGL/lvgl/src/core/lv_obj_class.c:103:6:lv_obj_class_init_obj	24	static
+../LVGL/lvgl/src/core/lv_obj_class.c:133:6:_lv_obj_destruct	16	static
+../LVGL/lvgl/src/core/lv_obj_class.c:146:6:lv_obj_is_editable	24	static
+../LVGL/lvgl/src/core/lv_obj_class.c:158:6:lv_obj_is_group_def	24	static
+../LVGL/lvgl/src/core/lv_obj_class.c:174:13:lv_obj_construct	24	static
+../LVGL/lvgl/src/core/lv_obj_class.c:192:17:get_instance_size	24	static

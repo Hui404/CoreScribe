@@ -40,6 +40,7 @@ static uint8_t ui_last_preset_enabled = 0xFFU;
 static const int16_t ui_fixed_step_x100 = 100;
 static const uint16_t ui_fixed_feed_mm_min = 1500U;
 static const uint16_t ui_boot_screen_hold_ms = 450U;
+// 这个顺序要和按钮绑定顺序一致，回调里会按user_data取方向。
 static const ui_jog_vector_t ui_jog_vectors[4] = {
     {0, 1, "Y+"},
     {-1, 0, "X-"},
@@ -73,11 +74,13 @@ static void ui_init_screen(void);
 
 void ui_lvgl_task_init(void)
 {
+  // 先初始化显示再开触摸输入，避免上电瞬间误触。
   lv_port_disp_init();
   ui_show_boot_screen();
   (void)lv_timer_handler();
   osDelay(10);
   lv_port_indev_init();
+  // 开机页多停一会，让底层外设和触摸采样更稳。
   osDelay(ui_boot_screen_hold_ms);
   ui_init_screen();
 }
@@ -86,8 +89,10 @@ uint32_t ui_lvgl_task_step(void)
 {
   uint32_t delay_ms;
 
+  // 先跑一轮触摸校准，再让LVGL处理事件和重绘。
   touch_calibration_process();
   delay_ms = lv_timer_handler();
+  // 返回值最少给1ms，避免osDelay(0)不让出CPU。
   return (delay_ms > 0U) ? delay_ms : 1U;
 }
 
@@ -157,6 +162,7 @@ static void ui_read_machine_position(float *mpos)
   uint32_t primask;
   uint8_t idx;
 
+  // 位置可能在中断里更新，先关中断拷贝快照再做换算。
   primask = __get_PRIMASK();
   __disable_irq();
   for (idx = 0; idx < N_AXIS; idx++) {
@@ -332,6 +338,7 @@ static void ui_jog_button_event_cb(lv_event_t *event)
     return;
   }
 
+  // 只有Idle/Jog状态允许点动，其它状态只提示不入队。
   if (!((sys.state == STATE_IDLE) || (sys.state & STATE_JOG))) {
     ui_set_hint_text(ui_jog_hint_text(sys.state, STATUS_IDLE_ERROR, 0U));
     return;
@@ -450,6 +457,7 @@ static void ui_status_timer_cb(lv_timer_t *timer)
     return;
   }
 
+  // 周期刷新UI：坐标、机器状态、队列长度、按钮可用性。
   ui_read_machine_position(mpos);
   ui_format_mm(x_text, sizeof(x_text), mpos[X_AXIS]);
   ui_format_mm(y_text, sizeof(y_text), mpos[Y_AXIS]);
@@ -482,6 +490,7 @@ static void ui_status_timer_cb(lv_timer_t *timer)
     ui_last_preset_enabled = preset_enabled;
   }
 
+  // 校准时提示文字由校准模块接管，避免被普通提示覆盖。
   if (touch_calibration_is_active() != 0U) {
     ui_set_hint_text(touch_calibration_get_last_message());
     return;
@@ -676,8 +685,10 @@ static void ui_init_screen(void)
   lv_label_set_text(button_label, "Y-");
   lv_obj_center(button_label);
 
+  // 每100ms刷新一次状态面板，响应和负载比较平衡。
   lv_timer_create(ui_status_timer_cb, 100, NULL);
   ui_update_mode_label();
+  // 清掉上次状态缓存，确保首次刷新把界面完整同步一遍。
   ui_last_hint_status = UI_JOG_STATUS_NONE;
   ui_last_hint_pending = 0xFFU;
   ui_last_jog_enabled = 0xFFU;
