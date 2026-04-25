@@ -7,6 +7,8 @@
 [![License: Multi-License](https://img.shields.io/badge/License-Multi--License-orange.svg)](./THIRD_PARTY_LICENSES.md)
 > License note: this repository is multi-licensed (including GPL components under `grbl/`). See `THIRD_PARTY_LICENSES.md`.
 
+👉 项目视频展示：([视频展示](https://www.bilibili.com/video/BV1D2o5BiE2H))
+
 👉 项目配套详解博客：([STM32 绘图仪 文章汇总 – xuuuu404](https://www.xuuuu404.com/stm32-绘图仪/))
 
 ## 📋 项目概述
