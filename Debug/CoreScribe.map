@@ -39252,7 +39252,7 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000190    0x5c21c
+.text           0x08000190    0x5c214
                 0x08000190                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000190       0x40 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -43714,970 +43714,968 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
                 0x08051a48       0x2c ./grbl/coolant_control.o
                 0x08051a48                coolant_sync
  .text.eeprom_get_char
-                0x08051a74       0x2c ./grbl/eeprom.o
+                0x08051a74       0x2a ./grbl/eeprom.o
                 0x08051a74                eeprom_get_char
  .text.eeprom_put_char
-                0x08051aa0       0x9c ./grbl/eeprom.o
-                0x08051aa0                eeprom_put_char
+                0x08051a9e       0x9c ./grbl/eeprom.o
+                0x08051a9e                eeprom_put_char
  .text.memcpy_to_eeprom_with_checksum
-                0x08051b3c       0x66 ./grbl/eeprom.o
-                0x08051b3c                memcpy_to_eeprom_with_checksum
+                0x08051b3a       0x66 ./grbl/eeprom.o
+                0x08051b3a                memcpy_to_eeprom_with_checksum
  .text.memcpy_from_eeprom_with_checksum
-                0x08051ba2       0x74 ./grbl/eeprom.o
-                0x08051ba2                memcpy_from_eeprom_with_checksum
- *fill*         0x08051c16        0x2 
- .text.gc_init  0x08051c18       0x34 ./grbl/gcode.o
-                0x08051c18                gc_init
+                0x08051ba0       0x74 ./grbl/eeprom.o
+                0x08051ba0                memcpy_from_eeprom_with_checksum
+ .text.gc_init  0x08051c14       0x34 ./grbl/gcode.o
+                0x08051c14                gc_init
  .text.gc_sync_position
-                0x08051c4c       0x18 ./grbl/gcode.o
-                0x08051c4c                gc_sync_position
- *fill*         0x08051c64        0x4 
+                0x08051c48       0x18 ./grbl/gcode.o
+                0x08051c48                gc_sync_position
  .text.gc_execute_line
-                0x08051c68     0x1c1c ./grbl/gcode.o
-                0x08051c68                gc_execute_line
+                0x08051c60     0x1c1c ./grbl/gcode.o
+                0x08051c60                gc_execute_line
  .text.limits_init
-                0x08053884       0x34 ./grbl/grbl_limits.o
-                0x08053884                limits_init
+                0x0805387c       0x34 ./grbl/grbl_limits.o
+                0x0805387c                limits_init
  .text.limits_disable
-                0x080538b8       0x1a ./grbl/grbl_limits.o
-                0x080538b8                limits_disable
- *fill*         0x080538d2        0x2 
+                0x080538b0       0x1a ./grbl/grbl_limits.o
+                0x080538b0                limits_disable
+ *fill*         0x080538ca        0x2 
  .text.limits_get_state
-                0x080538d4       0xb4 ./grbl/grbl_limits.o
-                0x080538d4                limits_get_state
+                0x080538cc       0xb4 ./grbl/grbl_limits.o
+                0x080538cc                limits_get_state
  .text.limits_go_home
-                0x08053988      0x5ac ./grbl/grbl_limits.o
-                0x08053988                limits_go_home
+                0x08053980      0x5ac ./grbl/grbl_limits.o
+                0x08053980                limits_go_home
  .text.limits_soft_check
-                0x08053f34       0x58 ./grbl/grbl_limits.o
-                0x08053f34                limits_soft_check
+                0x08053f2c       0x58 ./grbl/grbl_limits.o
+                0x08053f2c                limits_soft_check
  .text.serial_get_rx_buffer_available
-                0x08053f8c       0x48 ./grbl/grbl_serial.o
-                0x08053f8c                serial_get_rx_buffer_available
+                0x08053f84       0x48 ./grbl/grbl_serial.o
+                0x08053f84                serial_get_rx_buffer_available
  .text.serial_init
-                0x08053fd4       0x4c ./grbl/grbl_serial.o
-                0x08053fd4                serial_init
+                0x08053fcc       0x4c ./grbl/grbl_serial.o
+                0x08053fcc                serial_init
  .text.serial_write
-                0x08054020       0x7c ./grbl/grbl_serial.o
-                0x08054020                serial_write
+                0x08054018       0x7c ./grbl/grbl_serial.o
+                0x08054018                serial_write
  .text.serial_read
-                0x0805409c       0x54 ./grbl/grbl_serial.o
-                0x0805409c                serial_read
+                0x08054094       0x54 ./grbl/grbl_serial.o
+                0x08054094                serial_read
  .text.serial_reset_read_buffer
-                0x080540f0       0x20 ./grbl/grbl_serial.o
-                0x080540f0                serial_reset_read_buffer
+                0x080540e8       0x20 ./grbl/grbl_serial.o
+                0x080540e8                serial_reset_read_buffer
  .text.grbl_Start
-                0x08054110       0xf0 ./grbl/grbl_start.o
-                0x08054110                grbl_Start
+                0x08054108       0xf0 ./grbl/grbl_start.o
+                0x08054108                grbl_Start
  .text.jog_execute
-                0x08054200       0x80 ./grbl/jog.o
-                0x08054200                jog_execute
- .text.mc_line  0x08054280       0x9c ./grbl/motion_control.o
-                0x08054280                mc_line
- *fill*         0x0805431c        0x4 
- .text.mc_arc   0x08054320      0x530 ./grbl/motion_control.o
-                0x08054320                mc_arc
+                0x080541f8       0x80 ./grbl/jog.o
+                0x080541f8                jog_execute
+ .text.mc_line  0x08054278       0x9c ./grbl/motion_control.o
+                0x08054278                mc_line
+ *fill*         0x08054314        0x4 
+ .text.mc_arc   0x08054318      0x530 ./grbl/motion_control.o
+                0x08054318                mc_arc
  .text.mc_dwell
-                0x08054850       0x30 ./grbl/motion_control.o
-                0x08054850                mc_dwell
+                0x08054848       0x30 ./grbl/motion_control.o
+                0x08054848                mc_dwell
  .text.mc_homing_cycle
-                0x08054880       0x40 ./grbl/motion_control.o
-                0x08054880                mc_homing_cycle
+                0x08054878       0x40 ./grbl/motion_control.o
+                0x08054878                mc_homing_cycle
  .text.mc_probe_cycle
-                0x080548c0      0x118 ./grbl/motion_control.o
-                0x080548c0                mc_probe_cycle
+                0x080548b8      0x118 ./grbl/motion_control.o
+                0x080548b8                mc_probe_cycle
  .text.mc_reset
-                0x080549d8       0x6c ./grbl/motion_control.o
-                0x080549d8                mc_reset
+                0x080549d0       0x6c ./grbl/motion_control.o
+                0x080549d0                mc_reset
  .text.Delay_ms
-                0x08054a44       0x1a ./grbl/nuts_bolts.o
- *fill*         0x08054a5e        0x2 
+                0x08054a3c       0x1a ./grbl/nuts_bolts.o
+ *fill*         0x08054a56        0x2 
  .text.read_float
-                0x08054a60      0x1e8 ./grbl/nuts_bolts.o
-                0x08054a60                read_float
+                0x08054a58      0x1e8 ./grbl/nuts_bolts.o
+                0x08054a58                read_float
  .text.delay_sec
-                0x08054c48       0x88 ./grbl/nuts_bolts.o
-                0x08054c48                delay_sec
+                0x08054c40       0x88 ./grbl/nuts_bolts.o
+                0x08054c40                delay_sec
  .text.delay_ms
-                0x08054cd0       0x1a ./grbl/nuts_bolts.o
-                0x08054cd0                delay_ms
- .text.hypot_f  0x08054cea       0x52 ./grbl/nuts_bolts.o
-                0x08054cea                hypot_f
+                0x08054cc8       0x1a ./grbl/nuts_bolts.o
+                0x08054cc8                delay_ms
+ .text.hypot_f  0x08054ce2       0x52 ./grbl/nuts_bolts.o
+                0x08054ce2                hypot_f
  .text.convert_delta_vector_to_unit_vector
-                0x08054d3c       0xd2 ./grbl/nuts_bolts.o
-                0x08054d3c                convert_delta_vector_to_unit_vector
- *fill*         0x08054e0e        0x2 
+                0x08054d34       0xd2 ./grbl/nuts_bolts.o
+                0x08054d34                convert_delta_vector_to_unit_vector
+ *fill*         0x08054e06        0x2 
  .text.limit_value_by_axis_maximum
-                0x08054e10       0xa8 ./grbl/nuts_bolts.o
-                0x08054e10                limit_value_by_axis_maximum
+                0x08054e08       0xa8 ./grbl/nuts_bolts.o
+                0x08054e08                limit_value_by_axis_maximum
  .text.plan_next_block_index
-                0x08054eb8       0x28 ./grbl/planner.o
-                0x08054eb8                plan_next_block_index
+                0x08054eb0       0x28 ./grbl/planner.o
+                0x08054eb0                plan_next_block_index
  .text.plan_prev_block_index
-                0x08054ee0       0x28 ./grbl/planner.o
+                0x08054ed8       0x28 ./grbl/planner.o
  .text.planner_recalculate
-                0x08054f08      0x204 ./grbl/planner.o
+                0x08054f00      0x204 ./grbl/planner.o
  .text.plan_reset
-                0x0805510c       0x1c ./grbl/planner.o
-                0x0805510c                plan_reset
+                0x08055104       0x1c ./grbl/planner.o
+                0x08055104                plan_reset
  .text.plan_reset_buffer
-                0x08055128       0x38 ./grbl/planner.o
-                0x08055128                plan_reset_buffer
+                0x08055120       0x38 ./grbl/planner.o
+                0x08055120                plan_reset_buffer
  .text.plan_discard_current_block
-                0x08055160       0x4c ./grbl/planner.o
-                0x08055160                plan_discard_current_block
+                0x08055158       0x4c ./grbl/planner.o
+                0x08055158                plan_discard_current_block
  .text.plan_get_system_motion_block
-                0x080551ac       0x28 ./grbl/planner.o
-                0x080551ac                plan_get_system_motion_block
+                0x080551a4       0x28 ./grbl/planner.o
+                0x080551a4                plan_get_system_motion_block
  .text.plan_get_current_block
-                0x080551d4       0x3c ./grbl/planner.o
-                0x080551d4                plan_get_current_block
+                0x080551cc       0x3c ./grbl/planner.o
+                0x080551cc                plan_get_current_block
  .text.plan_get_exec_block_exit_speed_sqr
-                0x08055210       0x50 ./grbl/planner.o
-                0x08055210                plan_get_exec_block_exit_speed_sqr
+                0x08055208       0x50 ./grbl/planner.o
+                0x08055208                plan_get_exec_block_exit_speed_sqr
  .text.plan_check_full_buffer
-                0x08055260       0x28 ./grbl/planner.o
-                0x08055260                plan_check_full_buffer
+                0x08055258       0x28 ./grbl/planner.o
+                0x08055258                plan_check_full_buffer
  .text.plan_compute_profile_nominal_speed
-                0x08055288       0xec ./grbl/planner.o
-                0x08055288                plan_compute_profile_nominal_speed
+                0x08055280       0xec ./grbl/planner.o
+                0x08055280                plan_compute_profile_nominal_speed
  .text.plan_compute_profile_parameters
-                0x08055374       0x6c ./grbl/planner.o
+                0x0805536c       0x6c ./grbl/planner.o
  .text.plan_update_velocity_profile_parameters
-                0x080553e0       0x74 ./grbl/planner.o
-                0x080553e0                plan_update_velocity_profile_parameters
- *fill*         0x08055454        0x4 
+                0x080553d8       0x74 ./grbl/planner.o
+                0x080553d8                plan_update_velocity_profile_parameters
+ *fill*         0x0805544c        0x4 
  .text.plan_buffer_line
-                0x08055458      0x5ec ./grbl/planner.o
-                0x08055458                plan_buffer_line
+                0x08055450      0x5ec ./grbl/planner.o
+                0x08055450                plan_buffer_line
  .text.plan_sync_position
-                0x08055a44       0x64 ./grbl/planner.o
-                0x08055a44                plan_sync_position
+                0x08055a3c       0x64 ./grbl/planner.o
+                0x08055a3c                plan_sync_position
  .text.plan_get_block_buffer_available
-                0x08055aa8       0x44 ./grbl/planner.o
-                0x08055aa8                plan_get_block_buffer_available
+                0x08055aa0       0x44 ./grbl/planner.o
+                0x08055aa0                plan_get_block_buffer_available
  .text.plan_cycle_reinitialize
-                0x08055aec       0x20 ./grbl/planner.o
-                0x08055aec                plan_cycle_reinitialize
+                0x08055ae4       0x20 ./grbl/planner.o
+                0x08055ae4                plan_cycle_reinitialize
  .text.printString
-                0x08055b0c       0x2a ./grbl/print.o
-                0x08055b0c                printString
+                0x08055b04       0x2a ./grbl/print.o
+                0x08055b04                printString
  .text.printPgmString
-                0x08055b36       0x16 ./grbl/print.o
-                0x08055b36                printPgmString
+                0x08055b2e       0x16 ./grbl/print.o
+                0x08055b2e                printPgmString
  .text.print_uint8_base10
-                0x08055b4c       0xa0 ./grbl/print.o
-                0x08055b4c                print_uint8_base10
+                0x08055b44       0xa0 ./grbl/print.o
+                0x08055b44                print_uint8_base10
  .text.printFloat
-                0x08055bec      0x138 ./grbl/print.o
-                0x08055bec                printFloat
- *fill*         0x08055d24        0x4 
+                0x08055be4      0x138 ./grbl/print.o
+                0x08055be4                printFloat
+ *fill*         0x08055d1c        0x4 
  .text.printFloat_CoordValue
-                0x08055d28       0x64 ./grbl/print.o
-                0x08055d28                printFloat_CoordValue
- *fill*         0x08055d8c        0x4 
+                0x08055d20       0x64 ./grbl/print.o
+                0x08055d20                printFloat_CoordValue
+ *fill*         0x08055d84        0x4 
  .text.printFloat_RateValue
-                0x08055d90       0x64 ./grbl/print.o
-                0x08055d90                printFloat_RateValue
+                0x08055d88       0x64 ./grbl/print.o
+                0x08055d88                printFloat_RateValue
  .text.probe_init
-                0x08055df4        0xe ./grbl/probe.o
-                0x08055df4                probe_init
- *fill*         0x08055e02        0x2 
+                0x08055dec        0xe ./grbl/probe.o
+                0x08055dec                probe_init
+ *fill*         0x08055dfa        0x2 
  .text.probe_configure_invert_mask
-                0x08055e04       0x54 ./grbl/probe.o
-                0x08055e04                probe_configure_invert_mask
+                0x08055dfc       0x54 ./grbl/probe.o
+                0x08055dfc                probe_configure_invert_mask
  .text.probe_get_state
-                0x08055e58       0x10 ./grbl/probe.o
-                0x08055e58                probe_get_state
+                0x08055e50       0x10 ./grbl/probe.o
+                0x08055e50                probe_get_state
  .text.probe_state_monitor
-                0x08055e68       0x44 ./grbl/probe.o
-                0x08055e68                probe_state_monitor
+                0x08055e60       0x44 ./grbl/probe.o
+                0x08055e60                probe_state_monitor
  .text.protocol_main_loop
-                0x08055eac      0x1d0 ./grbl/protocol.o
-                0x08055eac                protocol_main_loop
+                0x08055ea4      0x1d0 ./grbl/protocol.o
+                0x08055ea4                protocol_main_loop
  .text.protocol_buffer_synchronize
-                0x0805607c       0x30 ./grbl/protocol.o
-                0x0805607c                protocol_buffer_synchronize
+                0x08056074       0x30 ./grbl/protocol.o
+                0x08056074                protocol_buffer_synchronize
  .text.protocol_auto_cycle_start
-                0x080560ac       0x18 ./grbl/protocol.o
-                0x080560ac                protocol_auto_cycle_start
+                0x080560a4       0x18 ./grbl/protocol.o
+                0x080560a4                protocol_auto_cycle_start
  .text.protocol_execute_realtime
-                0x080560c4       0x28 ./grbl/protocol.o
-                0x080560c4                protocol_execute_realtime
+                0x080560bc       0x28 ./grbl/protocol.o
+                0x080560bc                protocol_execute_realtime
  .text.protocol_background_slice
-                0x080560ec       0x48 ./grbl/protocol.o
+                0x080560e4       0x48 ./grbl/protocol.o
  .text.protocol_exec_rt_system
-                0x08056134      0x5b8 ./grbl/protocol.o
-                0x08056134                protocol_exec_rt_system
+                0x0805612c      0x5b8 ./grbl/protocol.o
+                0x0805612c                protocol_exec_rt_system
  .text.protocol_exec_rt_suspend
-                0x080566ec      0x2b0 ./grbl/protocol.o
+                0x080566e4      0x2b0 ./grbl/protocol.o
  .text.report_util_setting_prefix
-                0x0805699c       0x26 ./grbl/report.o
-                0x0805699c                report_util_setting_prefix
- *fill*         0x080569c2        0x2 
+                0x08056994       0x26 ./grbl/report.o
+                0x08056994                report_util_setting_prefix
+ *fill*         0x080569ba        0x2 
  .text.report_util_line_feed
-                0x080569c4       0x14 ./grbl/report.o
+                0x080569bc       0x14 ./grbl/report.o
  .text.report_util_feedback_line_feed
-                0x080569d8       0x12 ./grbl/report.o
- *fill*         0x080569ea        0x2 
+                0x080569d0       0x12 ./grbl/report.o
+ *fill*         0x080569e2        0x2 
  .text.report_util_gcode_modes_G
-                0x080569ec       0x14 ./grbl/report.o
+                0x080569e4       0x14 ./grbl/report.o
  .text.report_util_gcode_modes_M
-                0x08056a00       0x14 ./grbl/report.o
+                0x080569f8       0x14 ./grbl/report.o
  .text.report_util_axis_values
-                0x08056a14       0x44 ./grbl/report.o
+                0x08056a0c       0x44 ./grbl/report.o
  .text.report_util_uint8_setting
-                0x08056a58       0x2a ./grbl/report.o
+                0x08056a50       0x2a ./grbl/report.o
  .text.report_util_float_setting
-                0x08056a82       0x34 ./grbl/report.o
- *fill*         0x08056ab6        0x2 
+                0x08056a7a       0x34 ./grbl/report.o
+ *fill*         0x08056aae        0x2 
  .text.report_status_message
-                0x08056ab8       0x3c ./grbl/report.o
-                0x08056ab8                report_status_message
+                0x08056ab0       0x3c ./grbl/report.o
+                0x08056ab0                report_status_message
  .text.report_alarm_message
-                0x08056af4       0x30 ./grbl/report.o
-                0x08056af4                report_alarm_message
+                0x08056aec       0x30 ./grbl/report.o
+                0x08056aec                report_alarm_message
  .text.report_feedback_message
-                0x08056b24       0xe0 ./grbl/report.o
-                0x08056b24                report_feedback_message
+                0x08056b1c       0xe0 ./grbl/report.o
+                0x08056b1c                report_feedback_message
  .text.report_init_message
-                0x08056c04       0x14 ./grbl/report.o
-                0x08056c04                report_init_message
+                0x08056bfc       0x14 ./grbl/report.o
+                0x08056bfc                report_init_message
  .text.report_grbl_help
-                0x08056c18       0x14 ./grbl/report.o
-                0x08056c18                report_grbl_help
+                0x08056c10       0x14 ./grbl/report.o
+                0x08056c10                report_grbl_help
  .text.report_grbl_settings
-                0x08056c2c      0x2bc ./grbl/report.o
-                0x08056c2c                report_grbl_settings
+                0x08056c24      0x2bc ./grbl/report.o
+                0x08056c24                report_grbl_settings
  .text.report_probe_parameters
-                0x08056ee8       0x48 ./grbl/report.o
-                0x08056ee8                report_probe_parameters
+                0x08056ee0       0x48 ./grbl/report.o
+                0x08056ee0                report_probe_parameters
  .text.report_ngc_parameters
-                0x08056f30       0xc4 ./grbl/report.o
-                0x08056f30                report_ngc_parameters
+                0x08056f28       0xc4 ./grbl/report.o
+                0x08056f28                report_ngc_parameters
  .text.report_gcode_modes
-                0x08056ff4      0x168 ./grbl/report.o
-                0x08056ff4                report_gcode_modes
+                0x08056fec      0x168 ./grbl/report.o
+                0x08056fec                report_gcode_modes
  .text.report_startup_line
-                0x0805715c       0x38 ./grbl/report.o
-                0x0805715c                report_startup_line
+                0x08057154       0x38 ./grbl/report.o
+                0x08057154                report_startup_line
  .text.report_execute_startup_message
-                0x08057194       0x2e ./grbl/report.o
-                0x08057194                report_execute_startup_message
- *fill*         0x080571c2        0x2 
+                0x0805718c       0x2e ./grbl/report.o
+                0x0805718c                report_execute_startup_message
+ *fill*         0x080571ba        0x2 
  .text.report_build_info
-                0x080571c4       0x5c ./grbl/report.o
-                0x080571c4                report_build_info
+                0x080571bc       0x5c ./grbl/report.o
+                0x080571bc                report_build_info
  .text.report_realtime_status
-                0x08057220      0x520 ./grbl/report.o
-                0x08057220                report_realtime_status
+                0x08057218      0x520 ./grbl/report.o
+                0x08057218                report_realtime_status
  .text.report_realtime_debug
-                0x08057740        0xe ./grbl/report.o
-                0x08057740                report_realtime_debug
+                0x08057738        0xe ./grbl/report.o
+                0x08057738                report_realtime_debug
  .text.settings_store_startup_line
-                0x0805774e       0x30 ./grbl/settings.o
-                0x0805774e                settings_store_startup_line
+                0x08057746       0x30 ./grbl/settings.o
+                0x08057746                settings_store_startup_line
  .text.settings_store_build_info
-                0x0805777e       0x1c ./grbl/settings.o
-                0x0805777e                settings_store_build_info
+                0x08057776       0x1c ./grbl/settings.o
+                0x08057776                settings_store_build_info
  .text.settings_write_coord_data
-                0x0805779a       0x30 ./grbl/settings.o
-                0x0805779a                settings_write_coord_data
- *fill*         0x080577ca        0x2 
+                0x08057792       0x30 ./grbl/settings.o
+                0x08057792                settings_write_coord_data
+ *fill*         0x080577c2        0x2 
  .text.write_global_settings
-                0x080577cc       0x20 ./grbl/settings.o
-                0x080577cc                write_global_settings
+                0x080577c4       0x20 ./grbl/settings.o
+                0x080577c4                write_global_settings
  .text.settings_restore
-                0x080577ec       0xc0 ./grbl/settings.o
-                0x080577ec                settings_restore
+                0x080577e4       0xc0 ./grbl/settings.o
+                0x080577e4                settings_restore
  .text.settings_read_startup_line
-                0x080578ac       0x4c ./grbl/settings.o
-                0x080578ac                settings_read_startup_line
+                0x080578a4       0x4c ./grbl/settings.o
+                0x080578a4                settings_read_startup_line
  .text.settings_read_build_info
-                0x080578f8       0x34 ./grbl/settings.o
-                0x080578f8                settings_read_build_info
+                0x080578f0       0x34 ./grbl/settings.o
+                0x080578f0                settings_read_build_info
  .text.settings_read_coord_data
-                0x0805792c       0x50 ./grbl/settings.o
-                0x0805792c                settings_read_coord_data
+                0x08057924       0x50 ./grbl/settings.o
+                0x08057924                settings_read_coord_data
  .text.read_global_settings
-                0x0805797c       0x3c ./grbl/settings.o
-                0x0805797c                read_global_settings
+                0x08057974       0x3c ./grbl/settings.o
+                0x08057974                read_global_settings
  .text.settings_store_global_setting
-                0x080579b8      0x3f0 ./grbl/settings.o
-                0x080579b8                settings_store_global_setting
+                0x080579b0      0x3f0 ./grbl/settings.o
+                0x080579b0                settings_store_global_setting
  .text.settings_init
-                0x08057da8       0x22 ./grbl/settings.o
-                0x08057da8                settings_init
+                0x08057da0       0x22 ./grbl/settings.o
+                0x08057da0                settings_init
  .text.get_step_pin_mask
-                0x08057dca       0x2c ./grbl/settings.o
-                0x08057dca                get_step_pin_mask
+                0x08057dc2       0x2c ./grbl/settings.o
+                0x08057dc2                get_step_pin_mask
  .text.get_direction_pin_mask
-                0x08057df6       0x2c ./grbl/settings.o
-                0x08057df6                get_direction_pin_mask
+                0x08057dee       0x2c ./grbl/settings.o
+                0x08057dee                get_direction_pin_mask
  .text.get_limit_pin_mask
-                0x08057e22       0x2c ./grbl/settings.o
-                0x08057e22                get_limit_pin_mask
+                0x08057e1a       0x2c ./grbl/settings.o
+                0x08057e1a                get_limit_pin_mask
  .text.spindle_init
-                0x08057e4e        0xc ./grbl/spindle_control.o
-                0x08057e4e                spindle_init
+                0x08057e46        0xc ./grbl/spindle_control.o
+                0x08057e46                spindle_init
  .text.spindle_get_state
-                0x08057e5a       0x10 ./grbl/spindle_control.o
-                0x08057e5a                spindle_get_state
+                0x08057e52       0x10 ./grbl/spindle_control.o
+                0x08057e52                spindle_get_state
  .text.spindle_stop
-                0x08057e6a        0xe ./grbl/spindle_control.o
-                0x08057e6a                spindle_stop
+                0x08057e62        0xe ./grbl/spindle_control.o
+                0x08057e62                spindle_stop
  .text.spindle_set_speed
-                0x08057e78       0x16 ./grbl/spindle_control.o
-                0x08057e78                spindle_set_speed
- *fill*         0x08057e8e        0x2 
+                0x08057e70       0x16 ./grbl/spindle_control.o
+                0x08057e70                spindle_set_speed
+ *fill*         0x08057e86        0x2 
  .text.spindle_compute_pwm_value
-                0x08057e90       0xd0 ./grbl/spindle_control.o
-                0x08057e90                spindle_compute_pwm_value
+                0x08057e88       0xd0 ./grbl/spindle_control.o
+                0x08057e88                spindle_compute_pwm_value
  .text.spindle_set_state
-                0x08057f60       0x6c ./grbl/spindle_control.o
-                0x08057f60                spindle_set_state
+                0x08057f58       0x6c ./grbl/spindle_control.o
+                0x08057f58                spindle_set_state
  .text.spindle_sync
-                0x08057fcc       0x34 ./grbl/spindle_control.o
-                0x08057fcc                spindle_sync
+                0x08057fc4       0x34 ./grbl/spindle_control.o
+                0x08057fc4                spindle_sync
  .text.st_apply_idle_state
-                0x08058000       0x98 ./grbl/stepper.o
+                0x08057ff8       0x98 ./grbl/stepper.o
  .text.st_wake_up
-                0x08058098       0x6c ./grbl/stepper.o
-                0x08058098                st_wake_up
+                0x08058090       0x6c ./grbl/stepper.o
+                0x08058090                st_wake_up
  .text.st_go_idle
-                0x08058104       0x44 ./grbl/stepper.o
-                0x08058104                st_go_idle
+                0x080580fc       0x44 ./grbl/stepper.o
+                0x080580fc                st_go_idle
  .text.st_finalize_idle
-                0x08058148       0x24 ./grbl/stepper.o
-                0x08058148                st_finalize_idle
+                0x08058140       0x24 ./grbl/stepper.o
+                0x08058140                st_finalize_idle
  .text.stepper_timer_interrupt
-                0x0805816c      0x3e8 ./grbl/stepper.o
-                0x0805816c                stepper_timer_interrupt
+                0x08058164      0x3e8 ./grbl/stepper.o
+                0x08058164                stepper_timer_interrupt
  .text.st_generate_step_dir_invert_masks
-                0x08058554       0x98 ./grbl/stepper.o
-                0x08058554                st_generate_step_dir_invert_masks
+                0x0805854c       0x98 ./grbl/stepper.o
+                0x0805854c                st_generate_step_dir_invert_masks
  .text.st_reset
-                0x080585ec      0x124 ./grbl/stepper.o
-                0x080585ec                st_reset
+                0x080585e4      0x124 ./grbl/stepper.o
+                0x080585e4                st_reset
  .text.stepper_init
-                0x08058710        0xe ./grbl/stepper.o
-                0x08058710                stepper_init
- *fill*         0x0805871e        0x2 
+                0x08058708        0xe ./grbl/stepper.o
+                0x08058708                stepper_init
+ *fill*         0x08058716        0x2 
  .text.st_update_plan_block_parameters
-                0x08058720       0x4c ./grbl/stepper.o
-                0x08058720                st_update_plan_block_parameters
+                0x08058718       0x4c ./grbl/stepper.o
+                0x08058718                st_update_plan_block_parameters
  .text.st_next_block_index
-                0x0805876c       0x28 ./grbl/stepper.o
- *fill*         0x08058794        0x4 
+                0x08058764       0x28 ./grbl/stepper.o
+ *fill*         0x0805878c        0x4 
  .text.st_prep_buffer
-                0x08058798      0xd4c ./grbl/stepper.o
-                0x08058798                st_prep_buffer
+                0x08058790      0xd4c ./grbl/stepper.o
+                0x08058790                st_prep_buffer
  .text.st_get_realtime_rate
-                0x080594e4       0x34 ./grbl/stepper.o
-                0x080594e4                st_get_realtime_rate
+                0x080594dc       0x34 ./grbl/stepper.o
+                0x080594dc                st_get_realtime_rate
  .text.system_init
-                0x08059518        0xe ./grbl/system.o
-                0x08059518                system_init
+                0x08059510        0xe ./grbl/system.o
+                0x08059510                system_init
  .text.system_control_get_state
-                0x08059526       0x10 ./grbl/system.o
-                0x08059526                system_control_get_state
+                0x0805951e       0x10 ./grbl/system.o
+                0x0805951e                system_control_get_state
  .text.system_check_safety_door_ajar
-                0x08059536       0x10 ./grbl/system.o
-                0x08059536                system_check_safety_door_ajar
+                0x0805952e       0x10 ./grbl/system.o
+                0x0805952e                system_check_safety_door_ajar
  .text.system_execute_startup
-                0x08059546       0x60 ./grbl/system.o
-                0x08059546                system_execute_startup
- *fill*         0x080595a6        0x2 
+                0x0805953e       0x60 ./grbl/system.o
+                0x0805953e                system_execute_startup
+ *fill*         0x0805959e        0x2 
  .text.system_execute_line
-                0x080595a8      0x4e4 ./grbl/system.o
-                0x080595a8                system_execute_line
+                0x080595a0      0x4e4 ./grbl/system.o
+                0x080595a0                system_execute_line
  .text.system_flag_wco_change
-                0x08059a8c       0x18 ./grbl/system.o
-                0x08059a8c                system_flag_wco_change
+                0x08059a84       0x18 ./grbl/system.o
+                0x08059a84                system_flag_wco_change
  .text.system_convert_axis_steps_to_mpos
-                0x08059aa4       0x9c ./grbl/system.o
-                0x08059aa4                system_convert_axis_steps_to_mpos
+                0x08059a9c       0x9c ./grbl/system.o
+                0x08059a9c                system_convert_axis_steps_to_mpos
  .text.system_convert_array_steps_to_mpos
-                0x08059b40       0x3e ./grbl/system.o
-                0x08059b40                system_convert_array_steps_to_mpos
+                0x08059b38       0x3e ./grbl/system.o
+                0x08059b38                system_convert_array_steps_to_mpos
  .text.system_convert_corexy_to_x_axis_steps
-                0x08059b7e       0x26 ./grbl/system.o
-                0x08059b7e                system_convert_corexy_to_x_axis_steps
+                0x08059b76       0x26 ./grbl/system.o
+                0x08059b76                system_convert_corexy_to_x_axis_steps
  .text.system_convert_corexy_to_y_axis_steps
-                0x08059ba4       0x26 ./grbl/system.o
-                0x08059ba4                system_convert_corexy_to_y_axis_steps
- *fill*         0x08059bca        0x2 
+                0x08059b9c       0x26 ./grbl/system.o
+                0x08059b9c                system_convert_corexy_to_y_axis_steps
+ *fill*         0x08059bc2        0x2 
  .text.system_check_travel_limits
-                0x08059bcc       0x6c ./grbl/system.o
-                0x08059bcc                system_check_travel_limits
+                0x08059bc4       0x6c ./grbl/system.o
+                0x08059bc4                system_check_travel_limits
  .text.system_set_exec_state_flag
-                0x08059c38       0x4c ./grbl/system.o
-                0x08059c38                system_set_exec_state_flag
+                0x08059c30       0x4c ./grbl/system.o
+                0x08059c30                system_set_exec_state_flag
  .text.system_clear_exec_state_flag
-                0x08059c84       0x58 ./grbl/system.o
-                0x08059c84                system_clear_exec_state_flag
+                0x08059c7c       0x58 ./grbl/system.o
+                0x08059c7c                system_clear_exec_state_flag
  .text.system_set_exec_alarm
-                0x08059cdc       0x44 ./grbl/system.o
-                0x08059cdc                system_set_exec_alarm
+                0x08059cd4       0x44 ./grbl/system.o
+                0x08059cd4                system_set_exec_alarm
  .text.system_clear_exec_alarm
-                0x08059d20       0x40 ./grbl/system.o
-                0x08059d20                system_clear_exec_alarm
+                0x08059d18       0x40 ./grbl/system.o
+                0x08059d18                system_clear_exec_alarm
  .text.system_set_exec_motion_override_flag
-                0x08059d60       0x4c ./grbl/system.o
-                0x08059d60                system_set_exec_motion_override_flag
+                0x08059d58       0x4c ./grbl/system.o
+                0x08059d58                system_set_exec_motion_override_flag
  .text.system_set_exec_accessory_override_flag
-                0x08059dac       0x4c ./grbl/system.o
-                0x08059dac                system_set_exec_accessory_override_flag
+                0x08059da4       0x4c ./grbl/system.o
+                0x08059da4                system_set_exec_accessory_override_flag
  .text.system_clear_exec_motion_overrides
-                0x08059df8       0x40 ./grbl/system.o
-                0x08059df8                system_clear_exec_motion_overrides
+                0x08059df0       0x40 ./grbl/system.o
+                0x08059df0                system_clear_exec_motion_overrides
  .text.system_clear_exec_accessory_overrides
-                0x08059e38       0x40 ./grbl/system.o
-                0x08059e38                system_clear_exec_accessory_overrides
+                0x08059e30       0x40 ./grbl/system.o
+                0x08059e30                system_clear_exec_accessory_overrides
  .text.snprintf
-                0x08059e78       0x6c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-snprintf.o)
-                0x08059e78                sniprintf
-                0x08059e78                snprintf
- .text.memcmp   0x08059ee4       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcmp.o)
-                0x08059ee4                memcmp
- .text.memmove  0x08059f04       0x34 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
-                0x08059f04                memmove
- .text.memset   0x08059f38       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
-                0x08059f38                memset
+                0x08059e70       0x6c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-snprintf.o)
+                0x08059e70                sniprintf
+                0x08059e70                snprintf
+ .text.memcmp   0x08059edc       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcmp.o)
+                0x08059edc                memcmp
+ .text.memmove  0x08059efc       0x34 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+                0x08059efc                memmove
+ .text.memset   0x08059f30       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                0x08059f30                memset
  .text._reclaim_reent
-                0x08059f48       0xbc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
-                0x08059f48                _reclaim_reent
- .text.__errno  0x0805a004        0xc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
-                0x0805a004                __errno
+                0x08059f40       0xbc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reent.o)
+                0x08059f40                _reclaim_reent
+ .text.__errno  0x08059ffc        0xc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x08059ffc                __errno
  .text.__libc_init_array
-                0x0805a010       0x48 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
-                0x0805a010                __libc_init_array
+                0x0805a008       0x48 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x0805a008                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x0805a058        0x2 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x0805a058                __retarget_lock_acquire_recursive
+                0x0805a050        0x2 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x0805a050                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0805a05a        0x2 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x0805a05a                __retarget_lock_release_recursive
- .text.strcpy   0x0805a05c       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcpy.o)
-                0x0805a05c                strcpy
- .text.memcpy   0x0805a06c       0x1c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x0805a06c                memcpy
- .text._free_r  0x0805a088       0x94 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
-                0x0805a088                _free_r
+                0x0805a052        0x2 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x0805a052                __retarget_lock_release_recursive
+ .text.strcpy   0x0805a054       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcpy.o)
+                0x0805a054                strcpy
+ .text.memcpy   0x0805a064       0x1c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x0805a064                memcpy
+ .text._free_r  0x0805a080       0x94 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                0x0805a080                _free_r
  .text.sbrk_aligned
-                0x0805a11c       0x44 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x0805a114       0x44 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x0805a160      0x100 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
-                0x0805a160                _malloc_r
+                0x0805a158      0x100 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x0805a158                _malloc_r
  .text.__malloc_lock
-                0x0805a260        0xc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x0805a260                __malloc_lock
+                0x0805a258        0xc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x0805a258                __malloc_lock
  .text.__malloc_unlock
-                0x0805a26c        0xc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x0805a26c                __malloc_unlock
+                0x0805a264        0xc D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x0805a264                __malloc_unlock
  .text.__ssputs_r
-                0x0805a278       0xb6 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x0805a278                __ssputs_r
- *fill*         0x0805a32e        0x2 
+                0x0805a270       0xb6 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x0805a270                __ssputs_r
+ *fill*         0x0805a326        0x2 
  .text._svfprintf_r
-                0x0805a330      0x1f8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x0805a330                _svfiprintf_r
-                0x0805a330                _svfprintf_r
+                0x0805a328      0x1f8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x0805a328                _svfiprintf_r
+                0x0805a328                _svfprintf_r
  .text._printf_common
-                0x0805a528       0xda D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0805a528                _printf_common
- *fill*         0x0805a602        0x2 
+                0x0805a520       0xda D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0805a520                _printf_common
+ *fill*         0x0805a5fa        0x2 
  .text._printf_i
-                0x0805a604      0x23c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0805a604                _printf_i
- .text._sbrk_r  0x0805a840       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
-                0x0805a840                _sbrk_r
+                0x0805a5fc      0x23c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0805a5fc                _printf_i
+ .text._sbrk_r  0x0805a838       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                0x0805a838                _sbrk_r
  .text._realloc_r
-                0x0805a860       0x5c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
-                0x0805a860                _realloc_r
+                0x0805a858       0x5c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                0x0805a858                _realloc_r
  .text._malloc_usable_size_r
-                0x0805a8bc       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
-                0x0805a8bc                _malloc_usable_size_r
- .text.atan2    0x0805a8cc        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_atan2.o)
-                0x0805a8cc                atan2
- .text.sqrt     0x0805a8d0       0x58 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_sqrt.o)
-                0x0805a8d0                sqrt
- .text.cos      0x0805a928       0xa8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_cos.o)
-                0x0805a928                cos
- .text.sin      0x0805a9d0       0xa8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_sin.o)
-                0x0805a9d0                sin
- .text.sqrtf    0x0805aa78       0x3c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_sqrt.o)
-                0x0805aa78                sqrtf
- .text.lround   0x0805aab4       0x7c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_lround.o)
-                0x0805aab4                lround
- .text.lroundf  0x0805ab30       0x5a D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_lround.o)
-                0x0805ab30                lroundf
- *fill*         0x0805ab8a        0x2 
+                0x0805a8b4       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+                0x0805a8b4                _malloc_usable_size_r
+ .text.atan2    0x0805a8c4        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_atan2.o)
+                0x0805a8c4                atan2
+ .text.sqrt     0x0805a8c8       0x58 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_sqrt.o)
+                0x0805a8c8                sqrt
+ .text.cos      0x0805a920       0xa8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_cos.o)
+                0x0805a920                cos
+ .text.sin      0x0805a9c8       0xa8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_sin.o)
+                0x0805a9c8                sin
+ .text.sqrtf    0x0805aa70       0x3c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_sqrt.o)
+                0x0805aa70                sqrtf
+ .text.lround   0x0805aaac       0x7c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_lround.o)
+                0x0805aaac                lround
+ .text.lroundf  0x0805ab28       0x5a D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_lround.o)
+                0x0805ab28                lroundf
+ *fill*         0x0805ab82        0x2 
  .text.__ieee754_sqrt
-                0x0805ab8c      0x1ac D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
-                0x0805ab8c                __ieee754_sqrt
+                0x0805ab84      0x1ac D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                0x0805ab84                __ieee754_sqrt
  .text.__ieee754_sqrtf
-                0x0805ad38        0x6 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_sqrt.o)
-                0x0805ad38                __ieee754_sqrtf
- *fill*         0x0805ad3e        0x2 
- .text.ceil     0x0805ad40       0xf8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_ceil.o)
-                0x0805ad40                ceil
- .text.floor    0x0805ae38       0xf8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_floor.o)
-                0x0805ae38                floor
- .text.round    0x0805af30       0x8c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_round.o)
-                0x0805af30                round
- .text.trunc    0x0805afbc       0x74 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_trunc.o)
-                0x0805afbc                trunc
+                0x0805ad30        0x6 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_sqrt.o)
+                0x0805ad30                __ieee754_sqrtf
+ *fill*         0x0805ad36        0x2 
+ .text.ceil     0x0805ad38       0xf8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_ceil.o)
+                0x0805ad38                ceil
+ .text.floor    0x0805ae30       0xf8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_floor.o)
+                0x0805ae30                floor
+ .text.round    0x0805af28       0x8c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_round.o)
+                0x0805af28                round
+ .text.trunc    0x0805afb4       0x74 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_trunc.o)
+                0x0805afb4                trunc
  .text.__kernel_cos
-                0x0805b030      0x18c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_cos.o)
-                0x0805b030                __kernel_cos
- *fill*         0x0805b1bc        0x4 
+                0x0805b028      0x18c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_cos.o)
+                0x0805b028                __kernel_cos
+ *fill*         0x0805b1b4        0x4 
  .text.__kernel_sin
-                0x0805b1c0      0x174 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_sin.o)
-                0x0805b1c0                __kernel_sin
- *fill*         0x0805b334        0x4 
+                0x0805b1b8      0x174 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_sin.o)
+                0x0805b1b8                __kernel_sin
+ *fill*         0x0805b32c        0x4 
  .text.__ieee754_atan2
-                0x0805b338      0x18c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_atan2.o)
-                0x0805b338                __ieee754_atan2
- *fill*         0x0805b4c4        0x4 
+                0x0805b330      0x18c D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_atan2.o)
+                0x0805b330                __ieee754_atan2
+ *fill*         0x0805b4bc        0x4 
  .text.__ieee754_rem_pio2
-                0x0805b4c8      0x3f8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_rem_pio2.o)
-                0x0805b4c8                __ieee754_rem_pio2
- .text.atan     0x0805b8c0      0x330 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_atan.o)
-                0x0805b8c0                atan
- .text.fabs     0x0805bbf0       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
-                0x0805bbf0                fabs
+                0x0805b4c0      0x3f8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_rem_pio2.o)
+                0x0805b4c0                __ieee754_rem_pio2
+ .text.atan     0x0805b8b8      0x330 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_atan.o)
+                0x0805b8b8                atan
+ .text.fabs     0x0805bbe8       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+                0x0805bbe8                fabs
  .text.__kernel_rem_pio2
-                0x0805bc00      0x6a0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_rem_pio2.o)
-                0x0805bc00                __kernel_rem_pio2
- .text.scalbn   0x0805c2a0       0xf4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
-                0x0805c2a0                scalbn
+                0x0805bbf8      0x6a0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_rem_pio2.o)
+                0x0805bbf8                __kernel_rem_pio2
+ .text.scalbn   0x0805c298       0xf4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+                0x0805c298                scalbn
  *(.glue_7)
- .glue_7        0x0805c394        0x0 linker stubs
+ .glue_7        0x0805c38c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0805c394        0x0 linker stubs
+ .glue_7t       0x0805c38c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0805c394        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0805c38c        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0805c394        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0805c394                _init
- .init          0x0805c398        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0805c38c        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0805c38c                _init
+ .init          0x0805c390        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x0805c3a0        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0805c3a0                _fini
- .fini          0x0805c3a4        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0805c3ac                        . = ALIGN (0x4)
-                0x0805c3ac                        _etext = .
+ .fini          0x0805c398        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0805c398                _fini
+ .fini          0x0805c39c        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0805c3a4                        . = ALIGN (0x4)
+                0x0805c3a4                        _etext = .
 
-.vfp11_veneer   0x0805c3ac        0x0
- .vfp11_veneer  0x0805c3ac        0x0 linker stubs
+.vfp11_veneer   0x0805c3a4        0x0
+ .vfp11_veneer  0x0805c3a4        0x0 linker stubs
 
-.v4_bx          0x0805c3ac        0x0
- .v4_bx         0x0805c3ac        0x0 linker stubs
+.v4_bx          0x0805c3a4        0x0
+ .v4_bx         0x0805c3a4        0x0 linker stubs
 
-.iplt           0x0805c3ac        0x0
- .iplt          0x0805c3ac        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0805c3a4        0x0
+ .iplt          0x0805c3a4        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0805c3b0     0xbf08
-                0x0805c3b0                        . = ALIGN (0x4)
+.rodata         0x0805c3a8     0xbf08
+                0x0805c3a8                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0805c3b0       0x15 ./Core/Src/freertos.o
- *fill*         0x0805c3c5        0x3 
- .rodata        0x0805c3c8      0x26d ./Core/Src/touch_calibration.o
- *fill*         0x0805c635        0x3 
- .rodata        0x0805c638       0x30 ./Core/Src/ui_jog.o
- .rodata        0x0805c668      0x470 ./Core/Src/ui_lvgl.o
- .rodata        0x0805cad8        0x3 ./LVGL/lvgl/src/core/lv_obj.o
- *fill*         0x0805cadb        0x1 
- .rodata        0x0805cadc        0x8 ./LVGL/lvgl/src/draw/lv_draw_img.o
- .rodata        0x0805cae4       0x10 ./LVGL/lvgl/src/draw/lv_img_buf.o
- .rodata        0x0805caf4       0x14 ./LVGL/lvgl/src/draw/lv_img_decoder.o
- .rodata        0x0805cb08        0x8 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_polygon.o
- .rodata        0x0805cb10        0x4 ./LVGL/lvgl/src/extra/themes/default/lv_theme_default.o
- .rodata        0x0805cb14       0x25 ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar.o
- *fill*         0x0805cb39        0x3 
- .rodata        0x0805cb3c       0x7a ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.o
- *fill*         0x0805cbb6        0x2 
- .rodata        0x0805cbb8      0x28b ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.o
- *fill*         0x0805ce43        0x1 
- .rodata        0x0805ce44        0x4 ./LVGL/lvgl/src/extra/widgets/chart/lv_chart.o
- .rodata        0x0805ce48      0x1a2 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
- *fill*         0x0805cfea        0x2 
- .rodata        0x0805cfec        0x4 ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
- .rodata        0x0805cff0        0x4 ./LVGL/lvgl/src/extra/widgets/meter/lv_meter.o
- .rodata        0x0805cff4        0x4 ./LVGL/lvgl/src/extra/widgets/spinbox/lv_spinbox.o
- .rodata        0x0805cff8        0x6 ./LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.o
- *fill*         0x0805cffe        0x2 
- .rodata        0x0805d000        0x1 ./LVGL/lvgl/src/misc/lv_fs.o
- *fill*         0x0805d001        0x3 
- .rodata        0x0805d004        0x8 ./LVGL/lvgl/src/misc/lv_txt.o
- .rodata        0x0805d00c       0x2d ./LVGL/lvgl/src/widgets/lv_btnmatrix.o
- *fill*         0x0805d039        0x3 
- .rodata        0x0805d03c        0xa ./LVGL/lvgl/src/widgets/lv_checkbox.o
- *fill*         0x0805d046        0x2 
- .rodata        0x0805d048       0x27 ./LVGL/lvgl/src/widgets/lv_dropdown.o
- *fill*         0x0805d06f        0x1 
- .rodata        0x0805d070        0x5 ./LVGL/lvgl/src/widgets/lv_label.o
- *fill*         0x0805d075        0x3 
- .rodata        0x0805d078       0x2d ./LVGL/lvgl/src/widgets/lv_roller.o
- *fill*         0x0805d0a5        0x3 
- .rodata        0x0805d0a8        0xa ./LVGL/lvgl/src/widgets/lv_textarea.o
- *fill*         0x0805d0b2        0x2 
- .rodata        0x0805d0b4        0x5 ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- *fill*         0x0805d0b9        0x3 
- .rodata        0x0805d0bc        0xd ./Middlewares/Third_Party/FreeRTOS/Source/timers.o
- *fill*         0x0805d0c9        0x3 
- .rodata        0x0805d0cc      0x220 ./grbl/report.o
+ .rodata        0x0805c3a8       0x15 ./Core/Src/freertos.o
+ *fill*         0x0805c3bd        0x3 
+ .rodata        0x0805c3c0      0x26d ./Core/Src/touch_calibration.o
+ *fill*         0x0805c62d        0x3 
+ .rodata        0x0805c630       0x30 ./Core/Src/ui_jog.o
+ .rodata        0x0805c660      0x470 ./Core/Src/ui_lvgl.o
+ .rodata        0x0805cad0        0x3 ./LVGL/lvgl/src/core/lv_obj.o
+ *fill*         0x0805cad3        0x1 
+ .rodata        0x0805cad4        0x8 ./LVGL/lvgl/src/draw/lv_draw_img.o
+ .rodata        0x0805cadc       0x10 ./LVGL/lvgl/src/draw/lv_img_buf.o
+ .rodata        0x0805caec       0x14 ./LVGL/lvgl/src/draw/lv_img_decoder.o
+ .rodata        0x0805cb00        0x8 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_polygon.o
+ .rodata        0x0805cb08        0x4 ./LVGL/lvgl/src/extra/themes/default/lv_theme_default.o
+ .rodata        0x0805cb0c       0x25 ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar.o
+ *fill*         0x0805cb31        0x3 
+ .rodata        0x0805cb34       0x7a ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.o
+ *fill*         0x0805cbae        0x2 
+ .rodata        0x0805cbb0      0x28b ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.o
+ *fill*         0x0805ce3b        0x1 
+ .rodata        0x0805ce3c        0x4 ./LVGL/lvgl/src/extra/widgets/chart/lv_chart.o
+ .rodata        0x0805ce40      0x1a2 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+ *fill*         0x0805cfe2        0x2 
+ .rodata        0x0805cfe4        0x4 ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+ .rodata        0x0805cfe8        0x4 ./LVGL/lvgl/src/extra/widgets/meter/lv_meter.o
+ .rodata        0x0805cfec        0x4 ./LVGL/lvgl/src/extra/widgets/spinbox/lv_spinbox.o
+ .rodata        0x0805cff0        0x6 ./LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.o
+ *fill*         0x0805cff6        0x2 
+ .rodata        0x0805cff8        0x1 ./LVGL/lvgl/src/misc/lv_fs.o
+ *fill*         0x0805cff9        0x3 
+ .rodata        0x0805cffc        0x8 ./LVGL/lvgl/src/misc/lv_txt.o
+ .rodata        0x0805d004       0x2d ./LVGL/lvgl/src/widgets/lv_btnmatrix.o
+ *fill*         0x0805d031        0x3 
+ .rodata        0x0805d034        0xa ./LVGL/lvgl/src/widgets/lv_checkbox.o
+ *fill*         0x0805d03e        0x2 
+ .rodata        0x0805d040       0x27 ./LVGL/lvgl/src/widgets/lv_dropdown.o
+ *fill*         0x0805d067        0x1 
+ .rodata        0x0805d068        0x5 ./LVGL/lvgl/src/widgets/lv_label.o
+ *fill*         0x0805d06d        0x3 
+ .rodata        0x0805d070       0x2d ./LVGL/lvgl/src/widgets/lv_roller.o
+ *fill*         0x0805d09d        0x3 
+ .rodata        0x0805d0a0        0xa ./LVGL/lvgl/src/widgets/lv_textarea.o
+ *fill*         0x0805d0aa        0x2 
+ .rodata        0x0805d0ac        0x5 ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ *fill*         0x0805d0b1        0x3 
+ .rodata        0x0805d0b4        0xd ./Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ *fill*         0x0805d0c1        0x3 
+ .rodata        0x0805d0c4      0x220 ./grbl/report.o
  *(.rodata*)
  .rodata.defaultTask_attributes
-                0x0805d2ec       0x24 ./Core/Src/freertos.o
-                0x0805d2ec                defaultTask_attributes
+                0x0805d2e4       0x24 ./Core/Src/freertos.o
+                0x0805d2e4                defaultTask_attributes
  .rodata.grblTask_attributes
-                0x0805d310       0x24 ./Core/Src/freertos.o
-                0x0805d310                grblTask_attributes
+                0x0805d308       0x24 ./Core/Src/freertos.o
+                0x0805d308                grblTask_attributes
  .rodata.AHBPrescTable
-                0x0805d334       0x10 ./Core/Src/system_stm32f4xx.o
-                0x0805d334                AHBPrescTable
+                0x0805d32c       0x10 ./Core/Src/system_stm32f4xx.o
+                0x0805d32c                AHBPrescTable
  .rodata.APBPrescTable
-                0x0805d344        0x8 ./Core/Src/system_stm32f4xx.o
-                0x0805d344                APBPrescTable
+                0x0805d33c        0x8 ./Core/Src/system_stm32f4xx.o
+                0x0805d33c                APBPrescTable
  .rodata.ui_jog_vectors
-                0x0805d34c       0x20 ./Core/Src/ui_lvgl.o
+                0x0805d344       0x20 ./Core/Src/ui_lvgl.o
  .rodata.ui_preset_commands
-                0x0805d36c       0x30 ./Core/Src/ui_lvgl.o
+                0x0805d364       0x30 ./Core/Src/ui_lvgl.o
  .rodata.preset_x.0
-                0x0805d39c        0x6 ./Core/Src/ui_lvgl.o
- *fill*         0x0805d3a2        0x2 
+                0x0805d394        0x6 ./Core/Src/ui_lvgl.o
+ *fill*         0x0805d39a        0x2 
  .rodata.lv_obj_class
-                0x0805d3a4       0x1c ./LVGL/lvgl/src/core/lv_obj.o
-                0x0805d3a4                lv_obj_class
+                0x0805d39c       0x1c ./LVGL/lvgl/src/core/lv_obj.o
+                0x0805d39c                lv_obj_class
  .rodata._lv_bpp1_opa_table
-                0x0805d3c0        0x2 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
-                0x0805d3c0                _lv_bpp1_opa_table
- *fill*         0x0805d3c2        0x2 
+                0x0805d3b8        0x2 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
+                0x0805d3b8                _lv_bpp1_opa_table
+ *fill*         0x0805d3ba        0x2 
  .rodata._lv_bpp2_opa_table
-                0x0805d3c4        0x4 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
-                0x0805d3c4                _lv_bpp2_opa_table
+                0x0805d3bc        0x4 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
+                0x0805d3bc                _lv_bpp2_opa_table
  .rodata._lv_bpp4_opa_table
-                0x0805d3c8       0x10 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
-                0x0805d3c8                _lv_bpp4_opa_table
+                0x0805d3c0       0x10 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
+                0x0805d3c0                _lv_bpp4_opa_table
  .rodata._lv_bpp8_opa_table
-                0x0805d3d8      0x100 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
-                0x0805d3d8                _lv_bpp8_opa_table
+                0x0805d3d0      0x100 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_letter.o
+                0x0805d3d0                _lv_bpp8_opa_table
  .rodata.wcorr.0
-                0x0805d4d8       0x21 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_line.o
- *fill*         0x0805d4f9        0x3 
+                0x0805d4d0       0x21 ./LVGL/lvgl/src/draw/sw/lv_draw_sw_line.o
+ *fill*         0x0805d4f1        0x3 
  .rodata.trans_props.3
-                0x0805d4fc       0x16 ./LVGL/lvgl/src/extra/themes/default/lv_theme_default.o
- *fill*         0x0805d512        0x2 
+                0x0805d4f4       0x16 ./LVGL/lvgl/src/extra/themes/default/lv_theme_default.o
+ *fill*         0x0805d50a        0x2 
  .rodata.lv_calendar_class
-                0x0805d514       0x1c ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar.o
-                0x0805d514                lv_calendar_class
+                0x0805d50c       0x1c ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar.o
+                0x0805d50c                lv_calendar_class
  .rodata.lv_calendar_header_arrow_class
-                0x0805d530       0x1c ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.o
-                0x0805d530                lv_calendar_header_arrow_class
+                0x0805d528       0x1c ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.o
+                0x0805d528                lv_calendar_header_arrow_class
  .rodata.lv_calendar_header_dropdown_class
-                0x0805d54c       0x1c ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.o
-                0x0805d54c                lv_calendar_header_dropdown_class
+                0x0805d544       0x1c ./LVGL/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.o
+                0x0805d544                lv_calendar_header_dropdown_class
  .rodata.lv_chart_class
-                0x0805d568       0x1c ./LVGL/lvgl/src/extra/widgets/chart/lv_chart.o
-                0x0805d568                lv_chart_class
+                0x0805d560       0x1c ./LVGL/lvgl/src/extra/widgets/chart/lv_chart.o
+                0x0805d560                lv_chart_class
  .rodata.lv_colorwheel_class
-                0x0805d584       0x1c ./LVGL/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.o
-                0x0805d584                lv_colorwheel_class
+                0x0805d57c       0x1c ./LVGL/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.o
+                0x0805d57c                lv_colorwheel_class
  .rodata.lv_keyboard_class
-                0x0805d5a0       0x1c ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
-                0x0805d5a0                lv_keyboard_class
+                0x0805d598       0x1c ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d598                lv_keyboard_class
  .rodata.default_kb_map_lc
-                0x0805d5bc       0xb0 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d5b4       0xb0 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_ctrl_lc_map
-                0x0805d66c       0x50 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d664       0x50 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_map_uc
-                0x0805d6bc       0xb0 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d6b4       0xb0 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_ctrl_uc_map
-                0x0805d76c       0x50 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d764       0x50 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_map_spec
-                0x0805d7bc       0xb0 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d7b4       0xb0 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_ctrl_spec_map
-                0x0805d86c       0x50 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d864       0x50 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_map_num
-                0x0805d8bc       0x54 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+                0x0805d8b4       0x54 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
  .rodata.default_kb_ctrl_num_map
-                0x0805d910       0x22 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
- *fill*         0x0805d932        0x2 
+                0x0805d908       0x22 ./LVGL/lvgl/src/extra/widgets/keyboard/lv_keyboard.o
+ *fill*         0x0805d92a        0x2 
  .rodata.lv_led_class
-                0x0805d934       0x1c ./LVGL/lvgl/src/extra/widgets/led/lv_led.o
-                0x0805d934                lv_led_class
+                0x0805d92c       0x1c ./LVGL/lvgl/src/extra/widgets/led/lv_led.o
+                0x0805d92c                lv_led_class
  .rodata.lv_list_class
-                0x0805d950       0x1c ./LVGL/lvgl/src/extra/widgets/list/lv_list.o
-                0x0805d950                lv_list_class
+                0x0805d948       0x1c ./LVGL/lvgl/src/extra/widgets/list/lv_list.o
+                0x0805d948                lv_list_class
  .rodata.lv_list_btn_class
-                0x0805d96c       0x1c ./LVGL/lvgl/src/extra/widgets/list/lv_list.o
-                0x0805d96c                lv_list_btn_class
+                0x0805d964       0x1c ./LVGL/lvgl/src/extra/widgets/list/lv_list.o
+                0x0805d964                lv_list_btn_class
  .rodata.lv_list_text_class
-                0x0805d988       0x1c ./LVGL/lvgl/src/extra/widgets/list/lv_list.o
-                0x0805d988                lv_list_text_class
+                0x0805d980       0x1c ./LVGL/lvgl/src/extra/widgets/list/lv_list.o
+                0x0805d980                lv_list_text_class
  .rodata.lv_menu_class
-                0x0805d9a4       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805d9a4                lv_menu_class
+                0x0805d99c       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805d99c                lv_menu_class
  .rodata.lv_menu_page_class
-                0x0805d9c0       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805d9c0                lv_menu_page_class
+                0x0805d9b8       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805d9b8                lv_menu_page_class
  .rodata.lv_menu_cont_class
-                0x0805d9dc       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805d9dc                lv_menu_cont_class
+                0x0805d9d4       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805d9d4                lv_menu_cont_class
  .rodata.lv_menu_section_class
-                0x0805d9f8       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805d9f8                lv_menu_section_class
+                0x0805d9f0       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805d9f0                lv_menu_section_class
  .rodata.lv_menu_separator_class
-                0x0805da14       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805da14                lv_menu_separator_class
+                0x0805da0c       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805da0c                lv_menu_separator_class
  .rodata.lv_menu_sidebar_cont_class
-                0x0805da30       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805da30                lv_menu_sidebar_cont_class
+                0x0805da28       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805da28                lv_menu_sidebar_cont_class
  .rodata.lv_menu_main_cont_class
-                0x0805da4c       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805da4c                lv_menu_main_cont_class
+                0x0805da44       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805da44                lv_menu_main_cont_class
  .rodata.lv_menu_main_header_cont_class
-                0x0805da68       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805da68                lv_menu_main_header_cont_class
+                0x0805da60       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805da60                lv_menu_main_header_cont_class
  .rodata.lv_menu_sidebar_header_cont_class
-                0x0805da84       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
-                0x0805da84                lv_menu_sidebar_header_cont_class
+                0x0805da7c       0x1c ./LVGL/lvgl/src/extra/widgets/menu/lv_menu.o
+                0x0805da7c                lv_menu_sidebar_header_cont_class
  .rodata.lv_meter_class
-                0x0805daa0       0x1c ./LVGL/lvgl/src/extra/widgets/meter/lv_meter.o
-                0x0805daa0                lv_meter_class
+                0x0805da98       0x1c ./LVGL/lvgl/src/extra/widgets/meter/lv_meter.o
+                0x0805da98                lv_meter_class
  .rodata.lv_msgbox_class
-                0x0805dabc       0x1c ./LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.o
-                0x0805dabc                lv_msgbox_class
+                0x0805dab4       0x1c ./LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.o
+                0x0805dab4                lv_msgbox_class
  .rodata.lv_msgbox_backdrop_class
-                0x0805dad8       0x1c ./LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.o
-                0x0805dad8                lv_msgbox_backdrop_class
+                0x0805dad0       0x1c ./LVGL/lvgl/src/extra/widgets/msgbox/lv_msgbox.o
+                0x0805dad0                lv_msgbox_backdrop_class
  .rodata.lv_spinbox_class
-                0x0805daf4       0x1c ./LVGL/lvgl/src/extra/widgets/spinbox/lv_spinbox.o
-                0x0805daf4                lv_spinbox_class
+                0x0805daec       0x1c ./LVGL/lvgl/src/extra/widgets/spinbox/lv_spinbox.o
+                0x0805daec                lv_spinbox_class
  .rodata.lv_spinner_class
-                0x0805db10       0x1c ./LVGL/lvgl/src/extra/widgets/spinner/lv_spinner.o
-                0x0805db10                lv_spinner_class
+                0x0805db08       0x1c ./LVGL/lvgl/src/extra/widgets/spinner/lv_spinner.o
+                0x0805db08                lv_spinner_class
  .rodata.lv_tabview_class
-                0x0805db2c       0x1c ./LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.o
-                0x0805db2c                lv_tabview_class
+                0x0805db24       0x1c ./LVGL/lvgl/src/extra/widgets/tabview/lv_tabview.o
+                0x0805db24                lv_tabview_class
  .rodata.lv_tileview_class
-                0x0805db48       0x1c ./LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.o
-                0x0805db48                lv_tileview_class
+                0x0805db40       0x1c ./LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.o
+                0x0805db40                lv_tileview_class
  .rodata.lv_tileview_tile_class
-                0x0805db64       0x1c ./LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.o
-                0x0805db64                lv_tileview_tile_class
+                0x0805db5c       0x1c ./LVGL/lvgl/src/extra/widgets/tileview/lv_tileview.o
+                0x0805db5c                lv_tileview_tile_class
  .rodata.lv_win_class
-                0x0805db80       0x1c ./LVGL/lvgl/src/extra/widgets/win/lv_win.o
-                0x0805db80                lv_win_class
+                0x0805db78       0x1c ./LVGL/lvgl/src/extra/widgets/win/lv_win.o
+                0x0805db78                lv_win_class
  .rodata.glyph_bitmap
-                0x0805db9c     0x1a0f ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
- *fill*         0x0805f5ab        0x1 
+                0x0805db94     0x1a0f ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+ *fill*         0x0805f5a3        0x1 
  .rodata.glyph_dsc
-                0x0805f5ac      0x4f0 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+                0x0805f5a4      0x4f0 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
  .rodata.unicode_list_1
-                0x0805fa9c       0x7c ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
- .rodata.cmaps  0x0805fb18       0x28 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+                0x0805fa94       0x7c ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+ .rodata.cmaps  0x0805fb10       0x28 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
  .rodata.kern_left_class_mapping
-                0x0805fb40       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
- *fill*         0x0805fbde        0x2 
+                0x0805fb38       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+ *fill*         0x0805fbd6        0x2 
  .rodata.kern_right_class_mapping
-                0x0805fbe0       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
- *fill*         0x0805fc7e        0x2 
+                0x0805fbd8       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+ *fill*         0x0805fc76        0x2 
  .rodata.kern_class_values
-                0x0805fc80      0xbad ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
- *fill*         0x0806082d        0x3 
+                0x0805fc78      0xbad ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+ *fill*         0x08060825        0x3 
  .rodata.kern_classes
-                0x08060830       0x10 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+                0x08060828       0x10 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
  .rodata.font_dsc
-                0x08060840       0x18 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+                0x08060838       0x18 ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
  .rodata.lv_font_montserrat_12
-                0x08060858       0x1c ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
-                0x08060858                lv_font_montserrat_12
+                0x08060850       0x1c ./LVGL/lvgl/src/font/lv_font_montserrat_12.o
+                0x08060850                lv_font_montserrat_12
  .rodata.glyph_bitmap
-                0x08060874     0x2280 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+                0x0806086c     0x2280 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
  .rodata.glyph_dsc
-                0x08062af4      0x4f0 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+                0x08062aec      0x4f0 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
  .rodata.unicode_list_1
-                0x08062fe4       0x7c ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
- .rodata.cmaps  0x08063060       0x28 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+                0x08062fdc       0x7c ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+ .rodata.cmaps  0x08063058       0x28 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
  .rodata.kern_left_class_mapping
-                0x08063088       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
- *fill*         0x08063126        0x2 
+                0x08063080       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+ *fill*         0x0806311e        0x2 
  .rodata.kern_right_class_mapping
-                0x08063128       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
- *fill*         0x080631c6        0x2 
+                0x08063120       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+ *fill*         0x080631be        0x2 
  .rodata.kern_class_values
-                0x080631c8      0xbad ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
- *fill*         0x08063d75        0x3 
+                0x080631c0      0xbad ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+ *fill*         0x08063d6d        0x3 
  .rodata.kern_classes
-                0x08063d78       0x10 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+                0x08063d70       0x10 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
  .rodata.font_dsc
-                0x08063d88       0x18 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+                0x08063d80       0x18 ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
  .rodata.lv_font_montserrat_14
-                0x08063da0       0x1c ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
-                0x08063da0                lv_font_montserrat_14
+                0x08063d98       0x1c ./LVGL/lvgl/src/font/lv_font_montserrat_14.o
+                0x08063d98                lv_font_montserrat_14
  .rodata.glyph_bitmap
-                0x08063dbc     0x2b52 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
- *fill*         0x0806690e        0x2 
+                0x08063db4     0x2b52 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+ *fill*         0x08066906        0x2 
  .rodata.glyph_dsc
-                0x08066910      0x4f0 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+                0x08066908      0x4f0 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
  .rodata.unicode_list_1
-                0x08066e00       0x7c ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
- .rodata.cmaps  0x08066e7c       0x28 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+                0x08066df8       0x7c ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+ .rodata.cmaps  0x08066e74       0x28 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
  .rodata.kern_left_class_mapping
-                0x08066ea4       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
- *fill*         0x08066f42        0x2 
+                0x08066e9c       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+ *fill*         0x08066f3a        0x2 
  .rodata.kern_right_class_mapping
-                0x08066f44       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
- *fill*         0x08066fe2        0x2 
+                0x08066f3c       0x9e ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+ *fill*         0x08066fda        0x2 
  .rodata.kern_class_values
-                0x08066fe4      0xbad ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
- *fill*         0x08067b91        0x3 
+                0x08066fdc      0xbad ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+ *fill*         0x08067b89        0x3 
  .rodata.kern_classes
-                0x08067b94       0x10 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+                0x08067b8c       0x10 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
  .rodata.font_dsc
-                0x08067ba4       0x18 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+                0x08067b9c       0x18 ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
  .rodata.lv_font_montserrat_16
-                0x08067bbc       0x1c ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
-                0x08067bbc                lv_font_montserrat_16
+                0x08067bb4       0x1c ./LVGL/lvgl/src/font/lv_font_montserrat_16.o
+                0x08067bb4                lv_font_montserrat_16
  .rodata.colors.2
-                0x08067bd8       0x26 ./LVGL/lvgl/src/misc/lv_color.o
- *fill*         0x08067bfe        0x2 
+                0x08067bd0       0x26 ./LVGL/lvgl/src/misc/lv_color.o
+ *fill*         0x08067bf6        0x2 
  .rodata.colors.1
-                0x08067c00       0xbe ./LVGL/lvgl/src/misc/lv_color.o
- *fill*         0x08067cbe        0x2 
+                0x08067bf8       0xbe ./LVGL/lvgl/src/misc/lv_color.o
+ *fill*         0x08067cb6        0x2 
  .rodata.colors.0
-                0x08067cc0       0x98 ./LVGL/lvgl/src/misc/lv_color.o
+                0x08067cb8       0x98 ./LVGL/lvgl/src/misc/lv_color.o
  .rodata.sin0_90_table
-                0x08067d58       0xb6 ./LVGL/lvgl/src/misc/lv_math.o
- *fill*         0x08067e0e        0x2 
+                0x08067d50       0xb6 ./LVGL/lvgl/src/misc/lv_math.o
+ *fill*         0x08067e06        0x2 
  .rodata.lv_arc_class
-                0x08067e10       0x1c ./LVGL/lvgl/src/widgets/lv_arc.o
-                0x08067e10                lv_arc_class
+                0x08067e08       0x1c ./LVGL/lvgl/src/widgets/lv_arc.o
+                0x08067e08                lv_arc_class
  .rodata.lv_bar_class
-                0x08067e2c       0x1c ./LVGL/lvgl/src/widgets/lv_bar.o
-                0x08067e2c                lv_bar_class
+                0x08067e24       0x1c ./LVGL/lvgl/src/widgets/lv_bar.o
+                0x08067e24                lv_bar_class
  .rodata.lv_btn_class
-                0x08067e48       0x1c ./LVGL/lvgl/src/widgets/lv_btn.o
-                0x08067e48                lv_btn_class
+                0x08067e40       0x1c ./LVGL/lvgl/src/widgets/lv_btn.o
+                0x08067e40                lv_btn_class
  .rodata.lv_btnmatrix_class
-                0x08067e64       0x1c ./LVGL/lvgl/src/widgets/lv_btnmatrix.o
-                0x08067e64                lv_btnmatrix_class
+                0x08067e5c       0x1c ./LVGL/lvgl/src/widgets/lv_btnmatrix.o
+                0x08067e5c                lv_btnmatrix_class
  .rodata.lv_checkbox_class
-                0x08067e80       0x1c ./LVGL/lvgl/src/widgets/lv_checkbox.o
-                0x08067e80                lv_checkbox_class
+                0x08067e78       0x1c ./LVGL/lvgl/src/widgets/lv_checkbox.o
+                0x08067e78                lv_checkbox_class
  .rodata.lv_dropdown_class
-                0x08067e9c       0x1c ./LVGL/lvgl/src/widgets/lv_dropdown.o
-                0x08067e9c                lv_dropdown_class
+                0x08067e94       0x1c ./LVGL/lvgl/src/widgets/lv_dropdown.o
+                0x08067e94                lv_dropdown_class
  .rodata.lv_dropdownlist_class
-                0x08067eb8       0x1c ./LVGL/lvgl/src/widgets/lv_dropdown.o
-                0x08067eb8                lv_dropdownlist_class
+                0x08067eb0       0x1c ./LVGL/lvgl/src/widgets/lv_dropdown.o
+                0x08067eb0                lv_dropdownlist_class
  .rodata.lv_img_class
-                0x08067ed4       0x1c ./LVGL/lvgl/src/widgets/lv_img.o
-                0x08067ed4                lv_img_class
+                0x08067ecc       0x1c ./LVGL/lvgl/src/widgets/lv_img.o
+                0x08067ecc                lv_img_class
  .rodata.lv_label_class
-                0x08067ef0       0x1c ./LVGL/lvgl/src/widgets/lv_label.o
-                0x08067ef0                lv_label_class
+                0x08067ee8       0x1c ./LVGL/lvgl/src/widgets/lv_label.o
+                0x08067ee8                lv_label_class
  .rodata.lv_line_class
-                0x08067f0c       0x1c ./LVGL/lvgl/src/widgets/lv_line.o
-                0x08067f0c                lv_line_class
+                0x08067f04       0x1c ./LVGL/lvgl/src/widgets/lv_line.o
+                0x08067f04                lv_line_class
  .rodata.lv_roller_class
-                0x08067f28       0x1c ./LVGL/lvgl/src/widgets/lv_roller.o
-                0x08067f28                lv_roller_class
+                0x08067f20       0x1c ./LVGL/lvgl/src/widgets/lv_roller.o
+                0x08067f20                lv_roller_class
  .rodata.lv_roller_label_class
-                0x08067f44       0x1c ./LVGL/lvgl/src/widgets/lv_roller.o
-                0x08067f44                lv_roller_label_class
+                0x08067f3c       0x1c ./LVGL/lvgl/src/widgets/lv_roller.o
+                0x08067f3c                lv_roller_label_class
  .rodata.lv_slider_class
-                0x08067f60       0x1c ./LVGL/lvgl/src/widgets/lv_slider.o
-                0x08067f60                lv_slider_class
+                0x08067f58       0x1c ./LVGL/lvgl/src/widgets/lv_slider.o
+                0x08067f58                lv_slider_class
  .rodata.lv_switch_class
-                0x08067f7c       0x1c ./LVGL/lvgl/src/widgets/lv_switch.o
-                0x08067f7c                lv_switch_class
+                0x08067f74       0x1c ./LVGL/lvgl/src/widgets/lv_switch.o
+                0x08067f74                lv_switch_class
  .rodata.lv_table_class
-                0x08067f98       0x1c ./LVGL/lvgl/src/widgets/lv_table.o
-                0x08067f98                lv_table_class
+                0x08067f90       0x1c ./LVGL/lvgl/src/widgets/lv_table.o
+                0x08067f90                lv_table_class
  .rodata.lv_textarea_class
-                0x08067fb4       0x1c ./LVGL/lvgl/src/widgets/lv_textarea.o
-                0x08067fb4                lv_textarea_class
+                0x08067fac       0x1c ./LVGL/lvgl/src/widgets/lv_textarea.o
+                0x08067fac                lv_textarea_class
  .rodata.defaults
-                0x08067fd0       0x5c ./grbl/settings.o
-                0x08067fd0                defaults
+                0x08067fc8       0x5c ./grbl/settings.o
+                0x08067fc8                defaults
  .rodata._svfprintf_r.str1.1
-                0x0806802c       0x33 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x08068024       0x33 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
                                  0x11 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x0806805f       0x22 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
- *fill*         0x0806805f        0x1 
- .rodata.tiny   0x08068060        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
- .rodata.one    0x08068068        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                0x08068057       0x22 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+ *fill*         0x08068057        0x1 
+ .rodata.tiny   0x08068058        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .rodata.one    0x08068060        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
  .rodata.CSWTCH.9
-                0x08068070       0x18 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_atan2.o)
+                0x08068068       0x18 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_atan2.o)
  .rodata.CSWTCH.8
-                0x08068088       0x18 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_atan2.o)
+                0x08068080       0x18 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_atan2.o)
  .rodata.npio2_hw
-                0x080680a0       0x80 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_rem_pio2.o)
+                0x08068098       0x80 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_rem_pio2.o)
  .rodata.two_over_pi
-                0x08068120      0x108 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_rem_pio2.o)
+                0x08068118      0x108 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_rem_pio2.o)
  .rodata.atanlo
-                0x08068228       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_atan.o)
+                0x08068220       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_atan.o)
  .rodata.atanhi
-                0x08068248       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_atan.o)
- .rodata.PIo2   0x08068268       0x40 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_rem_pio2.o)
+                0x08068240       0x20 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_atan.o)
+ .rodata.PIo2   0x08068260       0x40 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_rem_pio2.o)
  .rodata.init_jk
-                0x080682a8       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_rem_pio2.o)
-                0x080682b8                        . = ALIGN (0x4)
+                0x080682a0       0x10 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-k_rem_pio2.o)
+                0x080682b0                        . = ALIGN (0x4)
 
-.ARM.extab      0x080682b8        0x0
-                0x080682b8                        . = ALIGN (0x4)
+.ARM.extab      0x080682b0        0x0
+                0x080682b0                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080682b8                        . = ALIGN (0x4)
+                0x080682b0                        . = ALIGN (0x4)
 
-.ARM            0x080682b8        0x8
-                0x080682b8                        . = ALIGN (0x4)
-                0x080682b8                        __exidx_start = .
+.ARM            0x080682b0        0x8
+                0x080682b0                        . = ALIGN (0x4)
+                0x080682b0                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x080682b8        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
- .ARM.exidx     0x080682c0        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strlen.o)
+ .ARM.exidx     0x080682b0        0x8 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strcmp.o)
+ .ARM.exidx     0x080682b8        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strlen.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x080682c0        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
+ .ARM.exidx     0x080682b8        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memchr.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x080682c0        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x080682b8        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x080682c0                        __exidx_end = .
-                0x080682c0                        . = ALIGN (0x4)
+                0x080682b8                        __exidx_end = .
+                0x080682b8                        . = ALIGN (0x4)
 
-.preinit_array  0x080682c0        0x0
-                0x080682c0                        . = ALIGN (0x4)
-                0x080682c0                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080682b8        0x0
+                0x080682b8                        . = ALIGN (0x4)
+                0x080682b8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080682c0                        PROVIDE (__preinit_array_end = .)
-                0x080682c0                        . = ALIGN (0x4)
+                0x080682b8                        PROVIDE (__preinit_array_end = .)
+                0x080682b8                        . = ALIGN (0x4)
 
-.init_array     0x080682c0        0x4
-                0x080682c0                        . = ALIGN (0x4)
-                0x080682c0                        PROVIDE (__init_array_start = .)
+.init_array     0x080682b8        0x4
+                0x080682b8                        . = ALIGN (0x4)
+                0x080682b8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080682c0        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080682c4                        PROVIDE (__init_array_end = .)
-                0x080682c4                        . = ALIGN (0x4)
+ .init_array    0x080682b8        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x080682bc                        PROVIDE (__init_array_end = .)
+                0x080682bc                        . = ALIGN (0x4)
 
-.fini_array     0x080682c4        0x4
-                0x080682c4                        . = ALIGN (0x4)
+.fini_array     0x080682bc        0x4
+                0x080682bc                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080682c4        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x080682bc        0x4 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x080682c8                        . = ALIGN (0x4)
-                0x080682c8                        _sidata = LOADADDR (.data)
+                0x080682c0                        . = ALIGN (0x4)
+                0x080682c0                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x080682c8        0x0
- .rel.iplt      0x080682c8        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x080682c0        0x0
+ .rel.iplt      0x080682c0        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000      0x21c load address 0x080682c8
+.data           0x20000000      0x21c load address 0x080682c0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -44769,12 +44767,12 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
  *(.RamFunc*)
                 0x2000021c                        . = ALIGN (0x4)
                 0x2000021c                        _edata = .
-                0x080684e4                        _siccmram = LOADADDR (.ccmram)
+                0x080684dc                        _siccmram = LOADADDR (.ccmram)
 
-.igot.plt       0x2000021c        0x0 load address 0x080684e4
+.igot.plt       0x2000021c        0x0 load address 0x080684dc
  .igot.plt      0x2000021c        0x0 D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x080684e4
+.ccmram         0x10000000        0x0 load address 0x080684dc
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
@@ -45797,7 +45795,7 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
 LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0xcec8a
+.debug_info     0x00000000    0xcec86
  .debug_info    0x00000000      0x510 ./Core/Src/AT24C64.o
  .debug_info    0x00000510      0x4b5 ./Core/Src/ILI9341_LCD.o
  .debug_info    0x000009c5      0x301 ./Core/Src/MyDelay.o
@@ -45928,25 +45926,25 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
  .debug_info    0x000c5878      0x4de ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
  .debug_info    0x000c5d56      0x4d5 ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_info    0x000c622b      0x1f3 ./grbl/coolant_control.o
- .debug_info    0x000c641e      0x2c2 ./grbl/eeprom.o
- .debug_info    0x000c66e0      0x9d8 ./grbl/gcode.o
- .debug_info    0x000c70b8      0xa5f ./grbl/grbl_limits.o
- .debug_info    0x000c7b17     0x1072 ./grbl/grbl_serial.o
- .debug_info    0x000c8b89      0x53b ./grbl/grbl_start.o
- .debug_info    0x000c90c4      0x5da ./grbl/jog.o
- .debug_info    0x000c969e      0x7be ./grbl/motion_control.o
- .debug_info    0x000c9e5c      0x4d2 ./grbl/nuts_bolts.o
- .debug_info    0x000ca32e      0x934 ./grbl/planner.o
- .debug_info    0x000cac62      0x400 ./grbl/print.o
- .debug_info    0x000cb062      0x2a0 ./grbl/probe.o
- .debug_info    0x000cb302      0x960 ./grbl/protocol.o
- .debug_info    0x000cbc62      0x930 ./grbl/report.o
- .debug_info    0x000cc592      0x5e9 ./grbl/settings.o
- .debug_info    0x000ccb7b      0x3b4 ./grbl/spindle_control.o
- .debug_info    0x000ccf2f     0x1242 ./grbl/stepper.o
- .debug_info    0x000ce171      0xb19 ./grbl/system.o
+ .debug_info    0x000c641e      0x2be ./grbl/eeprom.o
+ .debug_info    0x000c66dc      0x9d8 ./grbl/gcode.o
+ .debug_info    0x000c70b4      0xa5f ./grbl/grbl_limits.o
+ .debug_info    0x000c7b13     0x1072 ./grbl/grbl_serial.o
+ .debug_info    0x000c8b85      0x53b ./grbl/grbl_start.o
+ .debug_info    0x000c90c0      0x5da ./grbl/jog.o
+ .debug_info    0x000c969a      0x7be ./grbl/motion_control.o
+ .debug_info    0x000c9e58      0x4d2 ./grbl/nuts_bolts.o
+ .debug_info    0x000ca32a      0x934 ./grbl/planner.o
+ .debug_info    0x000cac5e      0x400 ./grbl/print.o
+ .debug_info    0x000cb05e      0x2a0 ./grbl/probe.o
+ .debug_info    0x000cb2fe      0x960 ./grbl/protocol.o
+ .debug_info    0x000cbc5e      0x930 ./grbl/report.o
+ .debug_info    0x000cc58e      0x5e9 ./grbl/settings.o
+ .debug_info    0x000ccb77      0x3b4 ./grbl/spindle_control.o
+ .debug_info    0x000ccf2b     0x1242 ./grbl/stepper.o
+ .debug_info    0x000ce16d      0xb19 ./grbl/system.o
 
-.debug_abbrev   0x00000000    0x19fbf
+.debug_abbrev   0x00000000    0x19fae
  .debug_abbrev  0x00000000      0x210 ./Core/Src/AT24C64.o
  .debug_abbrev  0x00000210      0x1e7 ./Core/Src/ILI9341_LCD.o
  .debug_abbrev  0x000003f7      0x15c ./Core/Src/MyDelay.o
@@ -46077,23 +46075,23 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
  .debug_abbrev  0x00017769      0x25c ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
  .debug_abbrev  0x000179c5      0x21d ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_abbrev  0x00017be2      0x117 ./grbl/coolant_control.o
- .debug_abbrev  0x00017cf9      0x139 ./grbl/eeprom.o
- .debug_abbrev  0x00017e32      0x1dc ./grbl/gcode.o
- .debug_abbrev  0x0001800e      0x26b ./grbl/grbl_limits.o
- .debug_abbrev  0x00018279      0x2ef ./grbl/grbl_serial.o
- .debug_abbrev  0x00018568      0x15d ./grbl/grbl_start.o
- .debug_abbrev  0x000186c5      0x143 ./grbl/jog.o
- .debug_abbrev  0x00018808      0x1ee ./grbl/motion_control.o
- .debug_abbrev  0x000189f6      0x1e0 ./grbl/nuts_bolts.o
- .debug_abbrev  0x00018bd6      0x2bf ./grbl/planner.o
- .debug_abbrev  0x00018e95      0x135 ./grbl/print.o
- .debug_abbrev  0x00018fca      0x10f ./grbl/probe.o
- .debug_abbrev  0x000190d9      0x235 ./grbl/protocol.o
- .debug_abbrev  0x0001930e      0x28d ./grbl/report.o
- .debug_abbrev  0x0001959b      0x247 ./grbl/settings.o
- .debug_abbrev  0x000197e2      0x16c ./grbl/spindle_control.o
- .debug_abbrev  0x0001994e      0x355 ./grbl/stepper.o
- .debug_abbrev  0x00019ca3      0x31c ./grbl/system.o
+ .debug_abbrev  0x00017cf9      0x128 ./grbl/eeprom.o
+ .debug_abbrev  0x00017e21      0x1dc ./grbl/gcode.o
+ .debug_abbrev  0x00017ffd      0x26b ./grbl/grbl_limits.o
+ .debug_abbrev  0x00018268      0x2ef ./grbl/grbl_serial.o
+ .debug_abbrev  0x00018557      0x15d ./grbl/grbl_start.o
+ .debug_abbrev  0x000186b4      0x143 ./grbl/jog.o
+ .debug_abbrev  0x000187f7      0x1ee ./grbl/motion_control.o
+ .debug_abbrev  0x000189e5      0x1e0 ./grbl/nuts_bolts.o
+ .debug_abbrev  0x00018bc5      0x2bf ./grbl/planner.o
+ .debug_abbrev  0x00018e84      0x135 ./grbl/print.o
+ .debug_abbrev  0x00018fb9      0x10f ./grbl/probe.o
+ .debug_abbrev  0x000190c8      0x235 ./grbl/protocol.o
+ .debug_abbrev  0x000192fd      0x28d ./grbl/report.o
+ .debug_abbrev  0x0001958a      0x247 ./grbl/settings.o
+ .debug_abbrev  0x000197d1      0x16c ./grbl/spindle_control.o
+ .debug_abbrev  0x0001993d      0x355 ./grbl/stepper.o
+ .debug_abbrev  0x00019c92      0x31c ./grbl/system.o
 
 .debug_aranges  0x00000000     0x69e8
  .debug_aranges
@@ -47012,7 +47010,7 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
  .debug_macro   0x0004c856      0x4ca ./grbl/stepper.o
  .debug_macro   0x0004cd20      0x45d ./grbl/system.o
 
-.debug_line     0x00000000    0xe0105
+.debug_line     0x00000000    0xe00f5
  .debug_line    0x00000000      0xc7c ./Core/Src/AT24C64.o
  .debug_line    0x00000c7c      0xc6f ./Core/Src/ILI9341_LCD.o
  .debug_line    0x000018eb      0xb26 ./Core/Src/MyDelay.o
@@ -47143,23 +47141,23 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
  .debug_line    0x000cd508      0xa38 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
  .debug_line    0x000cdf40      0xa9b ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_line    0x000ce9db      0xbc6 ./grbl/coolant_control.o
- .debug_line    0x000cf5a1      0xc73 ./grbl/eeprom.o
- .debug_line    0x000d0214     0x17f9 ./grbl/gcode.o
- .debug_line    0x000d1a0d      0xf3e ./grbl/grbl_limits.o
- .debug_line    0x000d294b      0xe43 ./grbl/grbl_serial.o
- .debug_line    0x000d378e      0xbc4 ./grbl/grbl_start.o
- .debug_line    0x000d4352      0xba4 ./grbl/jog.o
- .debug_line    0x000d4ef6      0xe9f ./grbl/motion_control.o
- .debug_line    0x000d5d95      0xe48 ./grbl/nuts_bolts.o
- .debug_line    0x000d6bdd     0x11e2 ./grbl/planner.o
- .debug_line    0x000d7dbf      0xd6b ./grbl/print.o
- .debug_line    0x000d8b2a      0xbc5 ./grbl/probe.o
- .debug_line    0x000d96ef     0x1401 ./grbl/protocol.o
- .debug_line    0x000daaf0     0x11ea ./grbl/report.o
- .debug_line    0x000dbcda      0xf84 ./grbl/settings.o
- .debug_line    0x000dcc5e      0xc70 ./grbl/spindle_control.o
- .debug_line    0x000dd8ce     0x1584 ./grbl/stepper.o
- .debug_line    0x000dee52     0x12b3 ./grbl/system.o
+ .debug_line    0x000cf5a1      0xc63 ./grbl/eeprom.o
+ .debug_line    0x000d0204     0x17f9 ./grbl/gcode.o
+ .debug_line    0x000d19fd      0xf3e ./grbl/grbl_limits.o
+ .debug_line    0x000d293b      0xe43 ./grbl/grbl_serial.o
+ .debug_line    0x000d377e      0xbc4 ./grbl/grbl_start.o
+ .debug_line    0x000d4342      0xba4 ./grbl/jog.o
+ .debug_line    0x000d4ee6      0xe9f ./grbl/motion_control.o
+ .debug_line    0x000d5d85      0xe48 ./grbl/nuts_bolts.o
+ .debug_line    0x000d6bcd     0x11e2 ./grbl/planner.o
+ .debug_line    0x000d7daf      0xd6b ./grbl/print.o
+ .debug_line    0x000d8b1a      0xbc5 ./grbl/probe.o
+ .debug_line    0x000d96df     0x1401 ./grbl/protocol.o
+ .debug_line    0x000daae0     0x11ea ./grbl/report.o
+ .debug_line    0x000dbcca      0xf84 ./grbl/settings.o
+ .debug_line    0x000dcc4e      0xc70 ./grbl/spindle_control.o
+ .debug_line    0x000dd8be     0x1584 ./grbl/stepper.o
+ .debug_line    0x000dee42     0x12b3 ./grbl/system.o
 
 .debug_str      0x00000000    0xfe58e
  .debug_str     0x00000000    0xfe58e ./Core/Src/AT24C64.o
@@ -47293,7 +47291,7 @@ LOAD D:/STM32CubeIDE/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.i
  .debug_str     0x000fe58e     0xb964 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
  .debug_str     0x000fe58e     0xb568 ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_str     0x000fe58e    0xd0538 ./grbl/coolant_control.o
- .debug_str     0x000fe58e    0xd05b2 ./grbl/eeprom.o
+ .debug_str     0x000fe58e    0xd05b9 ./grbl/eeprom.o
  .debug_str     0x000fe58e    0xd0b24 ./grbl/gcode.o
  .debug_str     0x000fe58e    0xd0edf ./grbl/grbl_limits.o
  .debug_str     0x000fe58e    0xd0dd5 ./grbl/grbl_serial.o
